@@ -9,12 +9,12 @@
 #ifndef BlackJack_BlackJackGame_h
 #define BlackJack_BlackJackGame_h
 
-namespace BlackJack
+namespace BlackJackGame
 {
-    class BlackJack
+    class BlackJackGame
     {
     public:
-        BlackJack( );
+        BlackJackGame( );
         
         
     private:
