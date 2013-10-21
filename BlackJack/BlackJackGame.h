@@ -9,15 +9,19 @@
 #ifndef BlackJack_BlackJackGame_h
 #define BlackJack_BlackJackGame_h
 
+#include "Deck.h"
+
 namespace BlackJackGame
 {
     class BlackJackGame
     {
     public:
-        BlackJackGame( );
+        BlackJackGame( )
+        :m_deck( );
         
         
     private:
+        private Deck m_deck;
         
     };
 

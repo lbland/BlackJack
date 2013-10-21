@@ -29,6 +29,7 @@
 		F186A8A51815EBA30003AAFE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F186A8A71815EBA30003AAFE /* BlackJack.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = BlackJack.1; sourceTree = "<group>"; };
 		F186A8AE1815ED7D0003AAFE /* BlackJackGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlackJackGame.h; sourceTree = "<group>"; };
+		F186A8AF1815F4410003AAFE /* Deck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +65,7 @@
 				F186A8A51815EBA30003AAFE /* main.cpp */,
 				F186A8A71815EBA30003AAFE /* BlackJack.1 */,
 				F186A8AE1815ED7D0003AAFE /* BlackJackGame.h */,
+				F186A8AF1815F4410003AAFE /* Deck.h */,
 			);
 			path = BlackJack;
 			sourceTree = "<group>";
