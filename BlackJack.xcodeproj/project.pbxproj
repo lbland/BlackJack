@@ -28,6 +28,7 @@
 		F186A8A21815EBA30003AAFE /* BlackJack */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BlackJack; sourceTree = BUILT_PRODUCTS_DIR; };
 		F186A8A51815EBA30003AAFE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F186A8A71815EBA30003AAFE /* BlackJack.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = BlackJack.1; sourceTree = "<group>"; };
+		F186A8AE1815ED7D0003AAFE /* BlackJackGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlackJackGame.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 			children = (
 				F186A8A51815EBA30003AAFE /* main.cpp */,
 				F186A8A71815EBA30003AAFE /* BlackJack.1 */,
+				F186A8AE1815ED7D0003AAFE /* BlackJackGame.h */,
 			);
 			path = BlackJack;
 			sourceTree = "<group>";
