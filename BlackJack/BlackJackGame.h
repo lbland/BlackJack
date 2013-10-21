@@ -17,11 +17,13 @@ namespace BlackJackGame
     {
     public:
         BlackJackGame( )
-        :m_deck( );
+        :m_deck( )
+        {
+        }
         
         
     private:
-        private Deck m_deck;
+        BlackJack::Deck m_deck;
         
     };
 
