@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		F186A8A61815EBA30003AAFE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F186A8A51815EBA30003AAFE /* main.cpp */; };
 		F186A8A81815EBA30003AAFE /* BlackJack.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F186A8A71815EBA30003AAFE /* BlackJack.1 */; };
+		F186A8B21815F9520003AAFE /* Card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F186A8B11815F9520003AAFE /* Card.cpp */; };
+		F186A8B4181627010003AAFE /* Deck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F186A8B3181627010003AAFE /* Deck.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +32,9 @@
 		F186A8A71815EBA30003AAFE /* BlackJack.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = BlackJack.1; sourceTree = "<group>"; };
 		F186A8AE1815ED7D0003AAFE /* BlackJackGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlackJackGame.h; sourceTree = "<group>"; };
 		F186A8AF1815F4410003AAFE /* Deck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		F186A8B01815F6A80003AAFE /* Card.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		F186A8B11815F9520003AAFE /* Card.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Card.cpp; sourceTree = "<group>"; };
+		F186A8B3181627010003AAFE /* Deck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Deck.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +71,9 @@
 				F186A8A71815EBA30003AAFE /* BlackJack.1 */,
 				F186A8AE1815ED7D0003AAFE /* BlackJackGame.h */,
 				F186A8AF1815F4410003AAFE /* Deck.h */,
+				F186A8B01815F6A80003AAFE /* Card.h */,
+				F186A8B11815F9520003AAFE /* Card.cpp */,
+				F186A8B3181627010003AAFE /* Deck.cpp */,
 			);
 			path = BlackJack;
 			sourceTree = "<group>";
@@ -121,7 +129,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F186A8B4181627010003AAFE /* Deck.cpp in Sources */,
 				F186A8A61815EBA30003AAFE /* main.cpp in Sources */,
+				F186A8B21815F9520003AAFE /* Card.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

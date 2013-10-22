@@ -21,9 +21,11 @@ namespace BlackJackGame
         {
         }
         
+        Deck& GetDeck( ) {  return m_deck; }
+        
         
     private:
-        BlackJack::Deck m_deck;
+        Deck m_deck;
         
     };
 

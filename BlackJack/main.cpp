@@ -13,7 +13,17 @@
 int main(int argc, const char * argv[])
 {
     
-    BlackJackGame::BlackJackGame blackJackGame();
+    BlackJackGame::BlackJackGame blackJackGame;
+    BlackJackGame::Deck deck = blackJackGame.GetDeck();
+    
+    for(int counter = 0; counter < 52; ++counter)
+    {
+        BlackJackGame::Card* card = deck.GetTopCard();
+        
+        std::cout << card->GetCardString() << "  " << card->GetCardValue() << std::endl;
+        
+    }
+    
 
     // insert code here...
     std::cout << "Hello, World!\n";

@@ -9,17 +9,22 @@
 #ifndef BlackJack_Deck_h
 #define BlackJack_Deck_h
 
-namespace BlackJack
+#include "Card.h"
+
+
+namespace BlackJackGame
 {
 
     class Deck
     {
     public:
         Deck( );
+        Card* GetTopCard( );
         
     private:
         
-        
+        Card* m_cards[52];
+        int m_howManyCardsDelt;
         
         
     };
