@@ -10,6 +10,7 @@
 #define BlackJack_Deck_h
 
 #include "Card.h"
+#include <vector>
 
 
 namespace BlackJackGame
@@ -19,15 +20,18 @@ namespace BlackJackGame
     {
     public:
         Deck( );
-        Card* GetTopCard( );
+        ~Deck( );
+        CardPtr GetTopCard( );
         
     private:
         
-        Card* m_cards[52];
-        int m_howManyCardsDelt;
+        std::vector<CardPtr>    m_cards;
+        int                     m_howManyCardsDelt;
         
         
     };
+
+    typedef std::unique_ptr<Deck> DeckPtr;
 };
 
 

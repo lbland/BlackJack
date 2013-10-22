@@ -16,16 +16,13 @@ namespace BlackJackGame
     class BlackJackGame
     {
     public:
-        BlackJackGame( )
-        :m_deck( )
-        {
-        }
+        BlackJackGame( );
         
-        Deck& GetDeck( ) {  return m_deck; }
+        DeckPtr GetDeck( );
         
         
     private:
-        Deck m_deck;
+        DeckPtr m_deck;
         
     };
 

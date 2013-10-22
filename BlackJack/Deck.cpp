@@ -7,7 +7,7 @@
 //
 
 #include "Deck.h"
-
+#define NUMBER_OF_CARDS_IN_A_DECK 52
 
 namespace BlackJackGame
 {
@@ -18,19 +18,36 @@ namespace BlackJackGame
      
      *********************************/
     Deck::Deck( )
-    : m_howManyCardsDelt(0)
+    : m_howManyCardsDelt( 0 )
     {
-        for(int counter = 0; counter < 52; ++counter)
+        m_cards.reserve( NUMBER_OF_CARDS_IN_A_DECK );
+        for( int counter = 0; counter < NUMBER_OF_CARDS_IN_A_DECK; ++counter )
         {
-            m_cards[counter] = new Card(counter);
+            CardPtr card(new Card(counter));
+            m_cards.push_back( std::move( card ) );
+            //m_cards.push_back( new Card( counter ) );
         }
     }
     
     
+    /*************************************
     
-    Card* Deck::GetTopCard( )
+     Destructor
+     
+     *************************************/
+    Deck::~Deck( )
     {
-        return m_cards[m_howManyCardsDelt++];
+    }
+    
+    /*************************************
+     
+     GetTopCard 
+        returns the top card of the deck
+     
+     ************************************/
+    CardPtr Deck::GetTopCard( )
+    {
+        return std::move( m_cards[ m_howManyCardsDelt++ ] );
     }
     
 }

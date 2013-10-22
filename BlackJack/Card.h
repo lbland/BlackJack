@@ -17,7 +17,6 @@ namespace BlackJackGame
     class Card
     {
     public:
-        Card( );
         Card( int value );
         
         const std::string GetCardString( );
@@ -28,6 +27,8 @@ namespace BlackJackGame
         
         
     };
+    
+    typedef std::unique_ptr<Card> CardPtr;
 };
 
 

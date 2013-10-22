@@ -14,11 +14,11 @@ int main(int argc, const char * argv[])
 {
     
     BlackJackGame::BlackJackGame blackJackGame;
-    BlackJackGame::Deck deck = blackJackGame.GetDeck();
+    BlackJackGame::DeckPtr deck = blackJackGame.GetDeck();
     
     for(int counter = 0; counter < 52; ++counter)
     {
-        BlackJackGame::Card* card = deck.GetTopCard();
+        BlackJackGame::CardPtr card = deck->GetTopCard();
         
         std::cout << card->GetCardString() << "  " << card->GetCardValue() << std::endl;
         
