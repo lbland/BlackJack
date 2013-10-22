@@ -28,7 +28,7 @@ namespace BlackJackGame
         
     };
     
-    typedef std::unique_ptr<Card> CardPtr;
+    typedef std::shared_ptr<Card> CardPtr;
 };
 
 

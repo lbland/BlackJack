@@ -24,20 +24,11 @@ namespace BlackJackGame
         for( int counter = 0; counter < NUMBER_OF_CARDS_IN_A_DECK; ++counter )
         {
             CardPtr card(new Card(counter));
-            m_cards.push_back( std::move( card ) );
+            m_cards.push_back( card );
             //m_cards.push_back( new Card( counter ) );
         }
     }
     
-    
-    /*************************************
-    
-     Destructor
-     
-     *************************************/
-    Deck::~Deck( )
-    {
-    }
     
     /*************************************
      
@@ -47,7 +38,25 @@ namespace BlackJackGame
      ************************************/
     CardPtr Deck::GetTopCard( )
     {
-        return std::move( m_cards[ m_howManyCardsDelt++ ] );
+        return m_cards.at( m_howManyCardsDelt++ );
     }
+    
+    
+    /*************************************
+     
+     Shuffle
+     shuffles the deck of cards
+     
+     ************************************/
+    void Deck::Shuffle( )
+    {
+        std::random_shuffle( m_cards.begin( ), m_cards.end( ) );
+        
+        //reset how many cards have been delt.
+        m_howManyCardsDelt = 0;
+    }
+    
+    
+    
     
 }

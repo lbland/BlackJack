@@ -72,11 +72,11 @@
 				F186A8A51815EBA30003AAFE /* main.cpp */,
 				F186A8A71815EBA30003AAFE /* BlackJack.1 */,
 				F186A8AE1815ED7D0003AAFE /* BlackJackGame.h */,
+				F186A8B51816F09D0003AAFE /* BlackJackGame.cpp */,
 				F186A8AF1815F4410003AAFE /* Deck.h */,
+				F186A8B3181627010003AAFE /* Deck.cpp */,
 				F186A8B01815F6A80003AAFE /* Card.h */,
 				F186A8B11815F9520003AAFE /* Card.cpp */,
-				F186A8B3181627010003AAFE /* Deck.cpp */,
-				F186A8B51816F09D0003AAFE /* BlackJackGame.cpp */,
 			);
 			path = BlackJack;
 			sourceTree = "<group>";

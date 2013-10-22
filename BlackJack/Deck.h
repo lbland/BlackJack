@@ -20,8 +20,9 @@ namespace BlackJackGame
     {
     public:
         Deck( );
-        ~Deck( );
+        
         CardPtr GetTopCard( );
+        void Shuffle( );
         
     private:
         
@@ -31,7 +32,7 @@ namespace BlackJackGame
         
     };
 
-    typedef std::unique_ptr<Deck> DeckPtr;
+    typedef std::shared_ptr<Deck> DeckPtr;
 };
 
 
