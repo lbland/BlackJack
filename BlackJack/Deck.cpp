@@ -25,7 +25,6 @@ namespace BlackJackGame
         {
             CardPtr card(new Card(counter));
             m_cards.push_back( card );
-            //m_cards.push_back( new Card( counter ) );
         }
     }
     
@@ -36,7 +35,7 @@ namespace BlackJackGame
         returns the top card of the deck
      
      ************************************/
-    CardPtr Deck::GetTopCard( )
+    const CardPtr& Deck::GetTopCard( )
     {
         return m_cards.at( m_howManyCardsDelt++ );
     }

@@ -9,7 +9,7 @@
 #ifndef BlackJack_BlackJackGame_h
 #define BlackJack_BlackJackGame_h
 
-#include "Deck.h"
+#include "Dealer.h"
 
 namespace BlackJackGame
 {
@@ -18,11 +18,10 @@ namespace BlackJackGame
     public:
         BlackJackGame( );
         
-        DeckPtr GetDeck( );
-        
+        void Start( );
         
     private:
-        DeckPtr m_deck;
+        DealerPtr m_dealerPtr;
         
     };
 

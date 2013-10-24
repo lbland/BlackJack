@@ -21,7 +21,7 @@ namespace BlackJackGame
     public:
         Deck( );
         
-        CardPtr GetTopCard( );
+        const CardPtr& GetTopCard( );
         void Shuffle( );
         
     private:

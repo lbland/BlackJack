@@ -12,6 +12,8 @@
 		F186A8B21815F9520003AAFE /* Card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F186A8B11815F9520003AAFE /* Card.cpp */; };
 		F186A8B4181627010003AAFE /* Deck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F186A8B3181627010003AAFE /* Deck.cpp */; };
 		F186A8B71816F09D0003AAFE /* BlackJackGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F186A8B51816F09D0003AAFE /* BlackJackGame.cpp */; };
+		F186A8BA181727440003AAFE /* Dealer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F186A8B8181727440003AAFE /* Dealer.cpp */; };
+		F1E8743418188CB8001F7BFF /* Hand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1E8743218188CB8001F7BFF /* Hand.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +39,10 @@
 		F186A8B11815F9520003AAFE /* Card.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Card.cpp; sourceTree = "<group>"; };
 		F186A8B3181627010003AAFE /* Deck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Deck.cpp; sourceTree = "<group>"; };
 		F186A8B51816F09D0003AAFE /* BlackJackGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlackJackGame.cpp; sourceTree = "<group>"; };
+		F186A8B8181727440003AAFE /* Dealer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dealer.cpp; sourceTree = "<group>"; };
+		F186A8B9181727440003AAFE /* Dealer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dealer.h; sourceTree = "<group>"; };
+		F1E8743218188CB8001F7BFF /* Hand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hand.cpp; sourceTree = "<group>"; };
+		F1E8743318188CB8001F7BFF /* Hand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hand.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,10 @@
 				F186A8B3181627010003AAFE /* Deck.cpp */,
 				F186A8B01815F6A80003AAFE /* Card.h */,
 				F186A8B11815F9520003AAFE /* Card.cpp */,
+				F186A8B9181727440003AAFE /* Dealer.h */,
+				F186A8B8181727440003AAFE /* Dealer.cpp */,
+				F1E8743318188CB8001F7BFF /* Hand.h */,
+				F1E8743218188CB8001F7BFF /* Hand.cpp */,
 			);
 			path = BlackJack;
 			sourceTree = "<group>";
@@ -132,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E8743418188CB8001F7BFF /* Hand.cpp in Sources */,
 				F186A8B4181627010003AAFE /* Deck.cpp in Sources */,
 				F186A8B71816F09D0003AAFE /* BlackJackGame.cpp in Sources */,
+				F186A8BA181727440003AAFE /* Dealer.cpp in Sources */,
 				F186A8A61815EBA30003AAFE /* main.cpp in Sources */,
 				F186A8B21815F9520003AAFE /* Card.cpp in Sources */,
 			);
@@ -243,6 +255,7 @@
 				F186A8AD1815EBA30003AAFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

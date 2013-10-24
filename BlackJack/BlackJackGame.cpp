@@ -15,20 +15,21 @@ namespace BlackJackGame
      
      *******************************/
     BlackJackGame::BlackJackGame( )
-    :m_deck( new Deck( ) )
+     : m_dealerPtr( new Dealer( ) )
     {
     }
+    
+    
     
     /*******************************
-     GetDeck:
-        Gets the deck of cards for the game
+     Start: Start the blackjack game
      
      *******************************/
-    DeckPtr BlackJackGame::GetDeck( )
+    void BlackJackGame::Start( )
     {
-        return std::move( m_deck );
+        m_dealerPtr->Deal();
+        
     }
-    
     
     
 }

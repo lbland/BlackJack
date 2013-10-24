@@ -34,43 +34,43 @@ namespace BlackJackGame
         switch (m_value % 13)
         {
             case 0:
-                stream << "Ace";
+                stream << "A";
                 break;
             case 1:
-                stream << "Two";
+                stream << "2";
                 break;
             case 2:
-                stream << "Three";
+                stream << "3";
                 break;
             case 3:
-                stream << "Four";
+                stream << "4";
                 break;
             case 4:
-                stream << "Five";
+                stream << "5";
                 break;
             case 5:
-                stream << "Six";
+                stream << "6";
                 break;
             case 6:
-                stream << "Seven";
+                stream << "7";
                 break;
             case 7:
-                stream << "Eight";
+                stream << "8";
                 break;
             case 8:
-                stream << "Nine";
+                stream << "9";
                 break;
             case 9:
-                stream << "Ten";
+                stream << "10";
                 break;
             case 10:
-                stream << "Jack";
+                stream << "J";
                 break;
             case 11:
-                stream << "Queen";
+                stream << "Q";
                 break;
             case 12:
-                stream << "King";
+                stream << "K";
                 break;
             default:
                 stream << "UNKNOWN";
@@ -80,16 +80,16 @@ namespace BlackJackGame
         
         switch ( m_value / 13 ) {
             case 0:
-                stream << " of Clubs ";
+                stream << "C ";
                 break;
             case 1:
-                stream << " of Diamonds ";
+                stream << "D ";
                 break;
             case 2:
-                stream << " of Hearts ";
+                stream << "H ";
                 break;
             case 3:
-                stream << " of Spades ";
+                stream << "S ";
                 break;
                 
             default:
