@@ -27,8 +27,9 @@ namespace BlackJackGame
         const std::string GetDealersHandAsString( );
         
         void AddCard( const CardPtr& card );
-        int GetCount( );
+        int  GetCount( );
         bool HasBusted( );
+        void ClearHand( );
         
     private:
         std::list<CardPtr>  m_cards;

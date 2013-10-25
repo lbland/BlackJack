@@ -95,4 +95,13 @@ namespace BlackJackGame
     }
     
     
+    /****************************************
+     ClearHand
+     clears the hand (list)
+     ****************************************/
+    void Hand::ClearHand( )
+    {
+        m_cards.clear();
+    }
+    
 }

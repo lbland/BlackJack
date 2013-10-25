@@ -27,7 +27,7 @@ namespace BlackJackGame
      *******************************/
     void BlackJackGame::Start( )
     {
-        m_dealerPtr->Deal();
+        m_dealerPtr->Start();
         
     }
     
