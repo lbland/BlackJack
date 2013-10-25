@@ -27,7 +27,7 @@ namespace BlackJackGame
       m_state( GameState::DEAL_CARDS ),
       m_numberOfHandsDelt( 0 )
     {
-        
+        m_deckPtr->Shuffle();
     }
     
     /*****************************************
@@ -259,21 +259,12 @@ namespace BlackJackGame
     
     
     /****************************************
-     ShouldDealerHit - should the dealer hit, (TBD)dealer has to hit on soft 17.
+     ShouldDealerHit - should the dealer hit
      
      ****************************************/
     bool Dealer::ShouldDealerHit( )
     {
-        int handCount = m_dealersCards->GetCount( );
-        
-        if(handCount >= 17)
-        {
-            std::cout << "Dealer has to stay." << std::endl;
-            return false;
-        }
-        
-        std::cout << "Dealer has to hit." << std::endl;
-        return true;
+        return m_dealersCards->ShouldDealerHit( );
     }
     
     
@@ -438,6 +429,7 @@ namespace BlackJackGame
             {
                 std::cout << "SHUFFLING DECK" << std::endl;
                 m_deckPtr->Shuffle( );
+                m_numberOfHandsDelt = 0;
             }
             
             m_state = GameState::DEAL_CARDS;
@@ -448,7 +440,6 @@ namespace BlackJackGame
         }
         else
         {
-            
             std::cout << "Please enter 'y' or 'n'" << std::endl;
         }
         

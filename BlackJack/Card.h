@@ -21,6 +21,7 @@ namespace BlackJackGame
         
         const std::string GetCardString( );
         const int GetCardValue( );
+        bool IsAce( );
         
     private:
         int m_value;

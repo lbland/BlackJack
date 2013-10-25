@@ -6,6 +6,10 @@
 //  Copyright (c) 2013 Loren Bland. All rights reserved.
 //
 
+#include <algorithm>
+#include <random>
+#include <chrono>
+
 #include "Deck.h"
 #define NUMBER_OF_CARDS_IN_A_DECK 52
 
@@ -49,13 +53,12 @@ namespace BlackJackGame
      ************************************/
     void Deck::Shuffle( )
     {
-        std::random_shuffle( m_cards.begin( ), m_cards.end( ) );
+        unsigned int seed = static_cast<unsigned int>(std::chrono::system_clock::now().time_since_epoch().count());
+        std::shuffle( m_cards.begin( ), m_cards.end( ), std::default_random_engine(seed) );
         
         //reset how many cards have been delt.
         m_howManyCardsDelt = 0;
     }
-    
-    
     
     
 }

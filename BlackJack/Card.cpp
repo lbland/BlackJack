@@ -127,6 +127,24 @@ namespace BlackJackGame
         return cardValue + 1;
         
     }
-
+    
+    
+    
+    /************************************************
+     
+     IsAce - returns true if the card is an ace.
+     
+     *************************************************/
+    bool Card::IsAce( )
+    {
+        int value = GetCardValue( );
+        if( value == 11 )
+        {
+            return true;
+        }
+        
+        return false;
+        
+    }
 
 }

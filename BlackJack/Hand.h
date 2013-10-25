@@ -30,9 +30,13 @@ namespace BlackJackGame
         int  GetCount( );
         bool HasBusted( );
         void ClearHand( );
+        bool ShouldDealerHit( );
         
     private:
         std::list<CardPtr>  m_cards;
+        bool                m_hasAce;
+        int                 m_highHand;
+        int                 m_lowHand;
         
     };
     

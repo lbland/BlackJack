@@ -25,9 +25,9 @@ namespace BlackJackGame
         void Shuffle( );
         
     private:
-        
         std::vector<CardPtr>    m_cards;
         int                     m_howManyCardsDelt;
+        
         
         
     };

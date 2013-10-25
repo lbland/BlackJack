@@ -6,14 +6,11 @@
 //  Copyright (c) 2013 Loren Bland. All rights reserved.
 //
 
-#include <iostream>
 #include "BlackJackGame.h"
 
 
 int main(int argc, const char * argv[])
 {
-    std::srand( static_cast<unsigned int>( std::time(0) ) );
-    
     BlackJackGame::BlackJackGame blackJackGame;
     
     blackJackGame.Start( );
