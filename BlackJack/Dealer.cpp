@@ -26,9 +26,20 @@ namespace BlackJackGame
       m_handsDealerWon( 0 ),
       m_draws( 0 ),
       m_state( GameState::DEAL_CARDS ),
-      m_numberOfHandsDelt( 0 )
+      m_numberOfHandsDelt( 0 ),
+      m_log( asl_open("com.lorenbland.BlackJack", "Logging for BlackJack", 0) )
     {
         m_deckPtr->Shuffle();
+    }
+    
+    /****************************************
+     
+     Destructor - destructor.  need to close the log
+     
+     ****************************************/
+    Dealer::~Dealer( )
+    {
+        asl_close(m_log);
     }
     
     /*****************************************
@@ -126,7 +137,7 @@ namespace BlackJackGame
                         break;
                         
                     default:
-                        
+                        asl_log(m_log, NULL, ASL_LEVEL_ERR, "The dealer did not have a state to go to. Shutting down game.");
                         throw UnKnowGameState("The Dealer has lost track of what to do next.");
                         break;
                         
@@ -447,6 +458,8 @@ namespace BlackJackGame
      ****************************************/
     void Dealer::PlayerWin( )
     {
+        asl_log(m_log, NULL, ASL_LEVEL_INFO, "Player Wins");
+        
         assert( m_state == GameState::PLAYER_WIN );
         
         m_handsPlayerWon++;
@@ -461,6 +474,8 @@ namespace BlackJackGame
      ****************************************/
     void Dealer::DealerWin( )
     {
+        asl_log(m_log, NULL, ASL_LEVEL_INFO, "Dealer wins");
+        
         assert( m_state == GameState::DEALER_WIN );
         
         m_handsDealerWon++;
@@ -474,6 +489,8 @@ namespace BlackJackGame
      ****************************************/
     void Dealer::Draw( )
     {
+        asl_log(m_log, NULL, ASL_LEVEL_INFO, "Game was a draw");
+        
         assert( m_state == GameState::DRAW );
         
         m_draws++;
@@ -489,6 +506,7 @@ namespace BlackJackGame
      ****************************************/
     void Dealer::FinishHand( )
     {
+        asl_log(m_log, NULL, ASL_LEVEL_INFO, "Finished a had.");
         assert( m_state == GameState::FINISH_HAND );
         
         std::cout   << "Player has won "
@@ -548,6 +566,8 @@ namespace BlackJackGame
             
             if( m_numberOfHandsDelt == HOW_MANY_GAMES_TO_PLAY_BEFORE_SHUFFLING )
             {
+                asl_log(m_log, NULL, ASL_LEVEL_INFO, "Shuffling the deck");
+                
                 std::cout << "SHUFFLING DECK" << std::endl;
                 m_deckPtr->Shuffle( );
                 m_numberOfHandsDelt = 0;

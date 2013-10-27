@@ -21,11 +21,21 @@ namespace BlackJackGame
     : m_cards( ),
       m_hasAce( false ),
       m_highHand( 0 ),
-      m_lowHand( 0 )
+      m_lowHand( 0 ),
+      m_log( asl_open("com.lorenbland.BlackJack", "Logging for BlackJack", 0) )
     
     {
     }
     
+    /****************************************
+     
+     Destructor - destructor.  need to close the log
+     
+     ****************************************/
+    Hand::~Hand( )
+    {
+        asl_close(m_log);
+    }
     
     /****************************************
      

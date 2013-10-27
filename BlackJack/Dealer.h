@@ -9,11 +9,10 @@
 #ifndef __BlackJack_Dealer_h
 #define __BlackJack_Dealer_h
 
-#include <iostream>
-#include <list>
 #include "Deck.h"
 #include "Hand.h"
-
+#include <iostream>
+#include <list>
 
 namespace BlackJackGame
 {
@@ -27,6 +26,9 @@ namespace BlackJackGame
     public:
         
         Dealer( );
+        
+        ~Dealer( );
+        
         void Start( );
     private:
         
@@ -75,6 +77,7 @@ namespace BlackJackGame
         int         m_draws;
         GameState   m_state;
         int         m_numberOfHandsDelt;
+        aslclient   m_log;
         
     };
     

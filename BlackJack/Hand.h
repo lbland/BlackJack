@@ -9,9 +9,10 @@
 #ifndef __BlackJack_Hand_h
 #define __BlackJack_Hand_h
 
+#include "Card.h"
+
 #include <iostream>
 #include <list>
-#include "Card.h"
 
 #endif /* defined(__BlackJack__Hand__) */
 
@@ -27,6 +28,8 @@ namespace BlackJackGame
     public:
         Hand( );
         
+        ~Hand( );
+        
         const std::string GetHandShowingAllCards( ) const;
         const std::string GetDealersHandAsString( ) const;
         
@@ -41,6 +44,7 @@ namespace BlackJackGame
         bool                m_hasAce;
         unsigned int        m_highHand;
         unsigned int        m_lowHand;
+        aslclient           m_log;
         
     };
     

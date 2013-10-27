@@ -10,6 +10,7 @@
 #define BlackJack_Card_h
 
 #include <string>
+#include <asl.h>
 
 namespace BlackJackGame
 {
@@ -18,6 +19,7 @@ namespace BlackJackGame
     {
     public:
         Card( unsigned int value );
+        ~Card( );
         
         const std::string GetCardDisplay( );
         const unsigned int GetCardValue( ) const;
@@ -25,6 +27,7 @@ namespace BlackJackGame
         
     private:
         unsigned int m_value;
+        aslclient m_log;
         
         
     };
