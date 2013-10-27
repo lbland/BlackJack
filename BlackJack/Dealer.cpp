@@ -319,7 +319,7 @@ namespace BlackJackGame
     {
         try
         {
-            CardPtr card = m_deckPtr->GetTopCard( );
+            CardPtr card = m_deckPtr->DealTopCard( );
             
             assert(card);
             
@@ -351,7 +351,7 @@ namespace BlackJackGame
     {
         try
         {
-            CardPtr card = m_deckPtr->GetTopCard( );
+            CardPtr card = m_deckPtr->DealTopCard( );
             
             assert(card);
             

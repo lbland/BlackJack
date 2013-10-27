@@ -46,11 +46,11 @@ namespace BlackJackGame
     
     /*************************************
      
-     GetTopCard 
+     DealTopCard 
         returns the top card of the deck
      
      ************************************/
-    const CardPtr& Deck::GetTopCard( )
+    const CardPtr& Deck::DealTopCard( )
     {
         try
         {
