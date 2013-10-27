@@ -43,6 +43,7 @@
 		F186A8B9181727440003AAFE /* Dealer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dealer.h; sourceTree = "<group>"; };
 		F1E8743218188CB8001F7BFF /* Hand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hand.cpp; sourceTree = "<group>"; };
 		F1E8743318188CB8001F7BFF /* Hand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hand.h; sourceTree = "<group>"; };
+		F1E87435181D486A001F7BFF /* Exceptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Exceptions.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,14 +80,15 @@
 				F186A8A71815EBA30003AAFE /* BlackJack.1 */,
 				F186A8AE1815ED7D0003AAFE /* BlackJackGame.h */,
 				F186A8B51816F09D0003AAFE /* BlackJackGame.cpp */,
-				F186A8AF1815F4410003AAFE /* Deck.h */,
-				F186A8B3181627010003AAFE /* Deck.cpp */,
 				F186A8B01815F6A80003AAFE /* Card.h */,
 				F186A8B11815F9520003AAFE /* Card.cpp */,
 				F186A8B9181727440003AAFE /* Dealer.h */,
 				F186A8B8181727440003AAFE /* Dealer.cpp */,
+				F186A8AF1815F4410003AAFE /* Deck.h */,
+				F186A8B3181627010003AAFE /* Deck.cpp */,
 				F1E8743318188CB8001F7BFF /* Hand.h */,
 				F1E8743218188CB8001F7BFF /* Hand.cpp */,
+				F1E87435181D486A001F7BFF /* Exceptions.h */,
 			);
 			path = BlackJack;
 			sourceTree = "<group>";

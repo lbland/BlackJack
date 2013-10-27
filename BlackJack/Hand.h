@@ -17,26 +17,30 @@
 
 namespace BlackJackGame
 {
+    static const unsigned int TWEENTY_ONE   = 21;
+    static const unsigned int HIGH_ACE      = 11;
+    static const unsigned int LOW_ACE       = 1;
+    static const unsigned int SEVENTEEN     = 17;
     
     class Hand
     {
     public:
         Hand( );
         
-        const std::string GetHandShowingAllCards( );
-        const std::string GetDealersHandAsString( );
+        const std::string GetHandShowingAllCards( ) const;
+        const std::string GetDealersHandAsString( ) const;
         
         void AddCard( const CardPtr& card );
-        int  GetCount( );
-        bool HasBusted( );
+        const unsigned int  GetCount( ) const;
+        const bool HasBusted( ) const;
         void ClearHand( );
         bool ShouldDealerHit( );
         
     private:
         std::list<CardPtr>  m_cards;
         bool                m_hasAce;
-        int                 m_highHand;
-        int                 m_lowHand;
+        unsigned int        m_highHand;
+        unsigned int        m_lowHand;
         
     };
     

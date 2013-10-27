@@ -7,8 +7,9 @@
 //
 
 #include "Dealer.h"
-#define BLACK_JACK 21
+#include "Exceptions.h"
 
+#include <assert.h>
 
 namespace BlackJackGame
 {
@@ -37,7 +38,22 @@ namespace BlackJackGame
      *****************************************/
     void Dealer::Start( )
     {
-        NextStep( );
+        try
+        {
+            NextStep( );
+        }
+        catch (NoMoreCardsInDeck& ex) {
+            throw ex;
+        }
+        catch(UnKnownCard& ex)
+        {
+            throw ex;
+        }
+        catch(UnKnowGameState& ex)
+        {
+            throw ex;
+        }
+        
     }
     
     /*****************************************
@@ -48,73 +64,88 @@ namespace BlackJackGame
      *****************************************/
     void Dealer::NextStep( )
     {
-        
-        bool continuePlaying = true;
-        
-        while( continuePlaying )
+        try
         {
-            switch( m_state )
+            bool continuePlaying = true;
+            
+            while( continuePlaying )
             {
-                case GameState::DEAL_CARDS:
-                    Deal( );
-                    break;
-                case GameState::CHECK_HANDS:
-                    CheckForBlackJacks( );
-                    break;
-                case GameState::PLAYERS_TURN:
-                    AskForUserInput();
-                    break;
+                switch( m_state )
+                {
+                    case GameState::DEAL_CARDS:
+                        Deal( );
+                        break;
                     
-                case GameState::CHECK_PLAYERS_HAND:
-                    CheckForPlayerBust();
-                    break;
-                    
-                case GameState::DEALERS_TURN:
-                    DealersTurn();
-                    break;
-                
-                case GameState::CHECK_DEALERS_HAND:
-                    CheckForDealerBust();
-                    break;
-                
-                case GameState::COMPARE_HANDS:
-                    CompareHands();
-                    break;
-                
-                case GameState::PLAYER_WIN:
-                    PlayerWin();
-                    break;
-
-                case GameState::DEALER_WIN:
-                    DealerWin();
-                    break;
-                    
-                case GameState::DRAW:
-                    Draw();
-                    break;
-                
-                case GameState::FINISH_HAND:
-                    FinishHand();
-                    break;
-                
-                case GameState::PLAY_AGAIN:
-                    PlayAgain( );
-                    break;
-                
-                case GameState::END_GAME:
-                    
-                    continuePlaying = false;
-                    break;
-                    
-                default:
-                    std::cout << "An Error has occurred, please start playing again" << std::endl;
-                    continuePlaying = false;
-                    break;
-                
+                    case GameState::CHECK_HANDS:
+                        CheckForBlackJacks( );
+                        break;
+                   
+                    case GameState::PLAYERS_TURN:
+                        AskForUserInput();
+                        break;
+                        
+                    case GameState::CHECK_PLAYERS_HAND:
+                        CheckForPlayerBust();
+                        break;
+                        
+                    case GameState::DEALERS_TURN:
+                        DealersTurn();
+                        break;
+                        
+                    case GameState::CHECK_DEALERS_HAND:
+                        CheckForDealerBust();
+                        break;
+                        
+                    case GameState::COMPARE_HANDS:
+                        CompareHands();
+                        break;
+                        
+                    case GameState::PLAYER_WIN:
+                        PlayerWin();
+                        break;
+                        
+                    case GameState::DEALER_WIN:
+                        DealerWin();
+                        break;
+                        
+                    case GameState::DRAW:
+                        Draw();
+                        break;
+                        
+                    case GameState::FINISH_HAND:
+                        FinishHand();
+                        break;
+                        
+                    case GameState::PLAY_AGAIN:
+                        PlayAgain( );
+                        break;
+                        
+                    case GameState::END_GAME:
+                        
+                        continuePlaying = false;
+                        break;
+                        
+                    default:
+                        
+                        throw UnKnowGameState("The Dealer has lost track of what to do next.");
+                        break;
+                        
+                }
             }
         }
-        
-        std::cout << "Thanks for playing.  Come back again" <<std::endl;
+        catch(NoMoreCardsInDeck& ex)
+        {
+            throw ex;
+        }
+        catch(UnKnownCard& ex)
+        {
+            throw ex;
+        }
+        catch(UnKnowGameState& ex)
+        {
+            throw ex;
+        }
+  
     }
     
     
@@ -125,22 +156,36 @@ namespace BlackJackGame
      ****************************************/
     void Dealer::Deal( )
     {
-        // first card to player
-        GiveUserOneMoreCard( );
-        // dealer gets 2nd card
-        GiveDealerOneMoreCard( );
-        // 3rd card to player
-        GiveUserOneMoreCard( );
-        // dealer gets 4th card
-        GiveDealerOneMoreCard( );
-        
-        std::cout << "You have: " << std::endl;
-        std::cout << m_playersCards->GetHandShowingAllCards( ) << std::endl;
-        
-        std::cout << "Dealer has: " << std::endl;
-        std::cout << m_dealersCards->GetDealersHandAsString( ) << std::endl;
-        
-        m_state = CHECK_HANDS;
+        try
+        {
+            assert( m_state == GameState::DEAL_CARDS );
+            
+            // first card to player
+            GiveUserOneMoreCard( );
+            // dealer gets 2nd card
+            GiveDealerOneMoreCard( );
+            // 3rd card to player
+            GiveUserOneMoreCard( );
+            // dealer gets 4th card
+            GiveDealerOneMoreCard( );
+            
+            std::cout << "You have: " << std::endl;
+            std::cout << m_playersCards->GetHandShowingAllCards( ) << std::endl;
+            
+            std::cout << "Dealer has: " << std::endl;
+            std::cout << m_dealersCards->GetDealersHandAsString( ) << std::endl;
+            
+            m_state = CHECK_HANDS;
+        }
+        catch (NoMoreCardsInDeck& ex)
+        {
+            throw ex;
+        }
+        catch(UnKnownCard& ex)
+        {
+            throw ex;
+        }
+
 
     }
     
@@ -151,6 +196,8 @@ namespace BlackJackGame
      ****************************************/
     void Dealer::CheckForBlackJacks( )
     {
+        assert( m_state == GameState::CHECK_HANDS );
+        
         int playersHand = m_playersCards->GetCount( );
         int dealersHand = m_dealersCards->GetCount( );
         
@@ -177,24 +224,40 @@ namespace BlackJackGame
      ****************************************/
     void Dealer::AskForUserInput( )
     {
-        std::cout << "What would you like to do (h)it or (s)tay?" << std::endl;
-        std::string input;
-        getline( std::cin, input );
-        
-        if( input.compare("s") == 0 || input.compare("S") == 0 )
+        try
         {
-            m_state = GameState::DEALERS_TURN;
+            assert( m_state == GameState::PLAYERS_TURN );
+            
+            std::cout << "What would you like to do (h)it or (s)tay?" << std::endl;
+            std::string input;
+            getline( std::cin, input );
+            
+            std::transform(input.begin(), input.end(), input.begin(), ::tolower);
+            
+            if( input.compare("s") == 0 )
+            {
+                m_state = GameState::DEALERS_TURN;
+            }
+            else if( input.compare("h") == 0 )
+            {
+                GiveUserOneMoreCard( true );
+                m_state = GameState::CHECK_PLAYERS_HAND;
+            }
+            else
+            {
+                std::cout << "Please enter a valid action: \n h - Hit \n s - Stay" << std::endl;
+                m_state = GameState::PLAYERS_TURN;
+            }
         }
-        else if( input.compare("h") == 0 || input.compare("H") == 0 )
+        catch (NoMoreCardsInDeck& ex)
         {
-            GiveUserOneMoreCard( true );
-            m_state = GameState::CHECK_PLAYERS_HAND;
+            throw ex;
         }
-        else
+        catch(UnKnownCard& ex)
         {
-            std::cout << "Please enter a valid action: \n h - Hit \n s - Stay" << std::endl;
-            m_state = GameState::PLAYERS_TURN;
+            throw ex;
         }
+
         
     }
     
@@ -205,22 +268,36 @@ namespace BlackJackGame
      ****************************************/
     void Dealer::DealersTurn( )
     {
-        // turn over deal
-        std::cout << std::endl;
-        std::cout << "Dealer has: " << std::endl;
-        
-        // see what the dealer has
-        std::cout << m_dealersCards->GetHandShowingAllCards( ) << std::endl;
-        
-        if( ShouldDealerHit( ) )
+        try
         {
-            GiveDealerOneMoreCard( true );
-            m_state = GameState::CHECK_DEALERS_HAND;
+            assert( m_state == GameState::DEALERS_TURN );
+            
+            // turn over deal
+            std::cout << std::endl;
+            std::cout << "Dealer has: " << std::endl;
+            
+            // see what the dealer has
+            std::cout << m_dealersCards->GetHandShowingAllCards( ) << std::endl;
+            
+            if( ShouldDealerHit( ) )
+            {
+                GiveDealerOneMoreCard( true );
+                m_state = GameState::CHECK_DEALERS_HAND;
+            }
+            else
+            {
+                m_state = GameState::COMPARE_HANDS;
+            }
         }
-        else
+        catch(NoMoreCardsInDeck& ex)
         {
-            m_state = GameState::COMPARE_HANDS;
+            throw ex;
         }
+        catch(UnKnownCard& ex)
+        {
+            throw ex;
+        }
+
     }
     
     /****************************************
@@ -229,14 +306,29 @@ namespace BlackJackGame
      ****************************************/
     void Dealer::GiveUserOneMoreCard( bool initialDeal /* = false */)
     {
-        CardPtr card = m_deckPtr->GetTopCard( );
-        m_playersCards->AddCard( card );
-        if( initialDeal )
+        try
         {
-            std::cout << "You got: " << card->GetCardString( ) << std::endl;
-            std::cout << "You have now: " << std::endl;
-            std::cout << m_playersCards->GetHandShowingAllCards( ) << std::endl;
+            CardPtr card = m_deckPtr->GetTopCard( );
+            
+            assert(card);
+            
+            m_playersCards->AddCard( card );
+            if( initialDeal )
+            {
+                std::cout << "You got: " << card->GetCardDisplay( ) << std::endl;
+                std::cout << "You have now: " << std::endl;
+                std::cout << m_playersCards->GetHandShowingAllCards( ) << std::endl;
+            }
         }
+        catch (NoMoreCardsInDeck& ex)
+        {
+            throw ex;
+        }
+        catch(UnKnownCard& ex)
+        {
+            throw ex;
+        }
+
     }
 
     
@@ -246,15 +338,28 @@ namespace BlackJackGame
      ****************************************/
     void Dealer::GiveDealerOneMoreCard( bool initialDeal /* = false */)
     {
-        CardPtr card = m_deckPtr->GetTopCard( );
-        m_dealersCards->AddCard( card );
-        if( initialDeal )
+        try
         {
-            std::cout << "Dealer got: " << card->GetCardString( ) << std::endl;
-            std::cout << "Dealer now has: " << std::endl;
-            std::cout << m_dealersCards->GetHandShowingAllCards( ) << std::endl;
+            CardPtr card = m_deckPtr->GetTopCard( );
+            
+            assert(card);
+            
+            m_dealersCards->AddCard( card );
+            if( initialDeal )
+            {
+                std::cout << "Dealer got: " << card->GetCardDisplay( ) << std::endl;
+                std::cout << "Dealer now has: " << std::endl;
+                std::cout << m_dealersCards->GetHandShowingAllCards( ) << std::endl;
+            }
         }
-
+        catch( NoMoreCardsInDeck& ex )
+        {
+            throw ex;
+        }
+        catch(UnKnownCard& ex)
+        {
+            throw ex;
+        }
     }
     
     
@@ -262,7 +367,7 @@ namespace BlackJackGame
      ShouldDealerHit - should the dealer hit
      
      ****************************************/
-    bool Dealer::ShouldDealerHit( )
+    bool Dealer::ShouldDealerHit( ) const
     {
         return m_dealersCards->ShouldDealerHit( );
     }
@@ -275,6 +380,8 @@ namespace BlackJackGame
      ****************************************/
     void Dealer::CompareHands( )
     {
+        assert( m_state == GameState::COMPARE_HANDS );
+        
         int playersHand = m_playersCards->GetCount( );
         int dealersHand = m_dealersCards->GetCount( );
         
@@ -301,6 +408,7 @@ namespace BlackJackGame
      ****************************************/
     void Dealer::CheckForPlayerBust( )
     {
+        assert( m_state == GameState::CHECK_PLAYERS_HAND );
         
         if( m_playersCards->HasBusted() )
         {
@@ -319,6 +427,7 @@ namespace BlackJackGame
      ****************************************/
     void Dealer::CheckForDealerBust( )
     {
+        assert( m_state == GameState::CHECK_DEALERS_HAND );
         
         if( m_dealersCards->HasBusted() )
         {
@@ -338,6 +447,8 @@ namespace BlackJackGame
      ****************************************/
     void Dealer::PlayerWin( )
     {
+        assert( m_state == GameState::PLAYER_WIN );
+        
         m_handsPlayerWon++;
         std::cout << "You Win!" << std::endl;
         m_state = GameState::FINISH_HAND;
@@ -350,6 +461,8 @@ namespace BlackJackGame
      ****************************************/
     void Dealer::DealerWin( )
     {
+        assert( m_state == GameState::DEALER_WIN );
+        
         m_handsDealerWon++;
         std::cout << "Dealer wins" << std::endl;
         m_state = GameState::FINISH_HAND;
@@ -361,6 +474,8 @@ namespace BlackJackGame
      ****************************************/
     void Dealer::Draw( )
     {
+        assert( m_state == GameState::DRAW );
+        
         m_draws++;
         std::cout << "Game is a draw." << std::endl;
         m_state = GameState::FINISH_HAND;
@@ -374,6 +489,8 @@ namespace BlackJackGame
      ****************************************/
     void Dealer::FinishHand( )
     {
+        assert( m_state == GameState::FINISH_HAND );
+        
         std::cout   << "Player has won "
                     << m_handsPlayerWon
                     << " games ( "
@@ -417,15 +534,19 @@ namespace BlackJackGame
      ****************************************/
     void Dealer::PlayAgain( )
     {
+        assert( m_state == GameState::PLAY_AGAIN );
+        
         std::cout << "What would you like to play another hand? (y)es or (n)o?" << std::endl;
         std::string input;
         getline( std::cin, input );
         
-        if( input.compare("Y") == 0 || input.compare("y") == 0 )
+        std::transform(input.begin(), input.end(), input.begin(), ::tolower);
+        
+        if( input.compare("y") == 0 )
         {
             m_numberOfHandsDelt++;
             
-            if( m_numberOfHandsDelt == 6 )
+            if( m_numberOfHandsDelt == HOW_MANY_GAMES_TO_PLAY_BEFORE_SHUFFLING )
             {
                 std::cout << "SHUFFLING DECK" << std::endl;
                 m_deckPtr->Shuffle( );
@@ -434,7 +555,7 @@ namespace BlackJackGame
             
             m_state = GameState::DEAL_CARDS;
         }
-        else if( input.compare("N") == 0 || input.compare("n") == 0 )
+        else if( input.compare("n") == 0 )
         {
             m_state = GameState::END_GAME;
         }

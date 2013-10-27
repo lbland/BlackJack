@@ -6,14 +6,10 @@
 //  Copyright (c) 2013 Loren Bland. All rights reserved.
 //
 
-#include <sstream>
 #include "Hand.h"
 
-#define TWEENTY_ONE 21
-#define HIGH_ACE    11
-#define LOW_ACE     1
-#define SEVENTEEN   17
-
+#include <sstream>
+#include <assert.h>
 
 namespace BlackJackGame
 {
@@ -38,6 +34,8 @@ namespace BlackJackGame
      ****************************************/
     void Hand::AddCard( const CardPtr& card )
     {
+        assert(card);
+        
         m_cards.push_back( card );
         int value = card->GetCardValue();
         bool isAce = card->IsAce( );
@@ -73,7 +71,7 @@ namespace BlackJackGame
      GetCount
       Gets the count of the hand
      ****************************************/
-    int Hand::GetCount( )
+    const unsigned int Hand::GetCount( ) const
     {
         if( m_highHand > TWEENTY_ONE )
         {
@@ -88,7 +86,7 @@ namespace BlackJackGame
     HasBusted
         returns if the hand has busted
      ****************************************/
-    bool Hand::HasBusted( )
+    const bool Hand::HasBusted( ) const
     {
         if( m_highHand > TWEENTY_ONE && m_hasAce == false )
         {
@@ -106,13 +104,13 @@ namespace BlackJackGame
      GetHandShowingAllCards
         Returns a string that can show a players hand
      ****************************************/
-    const std::string Hand::GetHandShowingAllCards( )
+    const std::string Hand::GetHandShowingAllCards( ) const
     {        
         std::stringstream hand;
-        for(std::list<CardPtr>::iterator iter = m_cards.begin( ); iter != m_cards.end( ); ++iter )
+        for(std::list<CardPtr>::const_iterator iter = m_cards.begin( ); iter != m_cards.end( ); ++iter )
         {
             CardPtr card = *iter;
-            hand << card->GetCardString( ) << " ";
+            hand << card->GetCardDisplay( ) << " ";
         }
         
         if( m_hasAce == true )
@@ -132,10 +130,10 @@ namespace BlackJackGame
      GetHandHiddingFirstCard
         Returns a string that can show a hand but hides one card
      ****************************************/
-    const std::string Hand::GetDealersHandAsString( )
+    const std::string Hand::GetDealersHandAsString( ) const
     {
         std::stringstream hand;
-        hand << "Hidden Card " << m_cards.front( )->GetCardString( );
+        hand << "Hidden Card " << m_cards.front( )->GetCardDisplay( );
         return hand.str( );
     }
     

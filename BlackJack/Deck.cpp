@@ -5,13 +5,13 @@
 //  Created by Loren Bland on 10/21/13.
 //  Copyright (c) 2013 Loren Bland. All rights reserved.
 //
+#include "Deck.h"
+#include "Exceptions.h"
 
 #include <algorithm>
 #include <random>
 #include <chrono>
 
-#include "Deck.h"
-#define NUMBER_OF_CARDS_IN_A_DECK 52
 
 namespace BlackJackGame
 {
@@ -41,7 +41,19 @@ namespace BlackJackGame
      ************************************/
     const CardPtr& Deck::GetTopCard( )
     {
-        return m_cards.at( m_howManyCardsDelt++ );
+        try
+        {
+            if( m_howManyCardsDelt >= ( NUMBER_OF_CARDS_IN_A_DECK - 1 )  )
+            {
+                throw NoMoreCardsInDeck( "Sorry there are no more cards in the deck." );
+            }
+            return m_cards[ m_howManyCardsDelt++ ];
+        }
+        catch ( NoMoreCardsInDeck& ex )
+        {
+            throw ex;
+        }
+
     }
     
     

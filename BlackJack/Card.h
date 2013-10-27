@@ -17,14 +17,14 @@ namespace BlackJackGame
     class Card
     {
     public:
-        Card( int value );
+        Card( unsigned int value );
         
-        const std::string GetCardString( );
-        const int GetCardValue( );
-        bool IsAce( );
+        const std::string GetCardDisplay( );
+        const unsigned int GetCardValue( ) const;
+        bool IsAce( ) const;
         
     private:
-        int m_value;
+        unsigned int m_value;
         
         
     };

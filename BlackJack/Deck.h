@@ -15,6 +15,7 @@
 
 namespace BlackJackGame
 {
+    static const unsigned int NUMBER_OF_CARDS_IN_A_DECK = 52;
 
     class Deck
     {
@@ -26,7 +27,7 @@ namespace BlackJackGame
         
     private:
         std::vector<CardPtr>    m_cards;
-        int                     m_howManyCardsDelt;
+        unsigned int            m_howManyCardsDelt;
         
         
         

@@ -7,6 +7,7 @@
 //
 
 #include "BlackJackGame.h"
+#include "Exceptions.h"
 
 namespace BlackJackGame
 {
@@ -27,7 +28,24 @@ namespace BlackJackGame
      *******************************/
     void BlackJackGame::Start( )
     {
-        m_dealerPtr->Start();
+        try
+        {
+            m_dealerPtr->Start();
+        }
+        catch (NoMoreCardsInDeck& ex)
+        {
+            std::cout << ex.what() << std::endl;
+        }
+        catch(UnKnownCard& ex)
+        {
+            std::cout << ex.what() << std::endl;
+        }
+        catch(UnKnowGameState& ex)
+        {
+            std::cout << ex.what() << std::endl;
+        }
+        
+        std::cout << "Please come back and play again.'" << std::endl;
         
     }
     

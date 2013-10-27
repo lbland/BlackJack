@@ -15,8 +15,11 @@
 #include "Hand.h"
 
 
-namespace BlackJackGame {
+namespace BlackJackGame
+{
     
+    static const unsigned int  BLACK_JACK = 21;
+    static const unsigned int HOW_MANY_GAMES_TO_PLAY_BEFORE_SHUFFLING = 6;
     
     class Dealer
     {
@@ -50,7 +53,7 @@ namespace BlackJackGame {
         void GiveUserOneMoreCard( bool initialDeal = false );
         void GiveDealerOneMoreCard( bool initialDeal = false );
         void CompareHands( );
-        bool ShouldDealerHit( );
+        bool ShouldDealerHit( ) const;
         void NextStep( );
         void CheckForBlackJacks( );
         void CheckForPlayerBust( );
