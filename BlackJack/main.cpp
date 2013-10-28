@@ -7,21 +7,29 @@
 //
 
 #include "BlackJackGame.h"
+#include <log4cxx/logstring.h>
+#include <log4cxx/basicconfigurator.h>
+#include <log4cxx/helpers/exception.h>
+#include <log4cxx/ndc.h>
 
-#include <asl.h>
+using namespace log4cxx;
+using namespace log4cxx::helpers;
 
 
 int main(int argc, const char * argv[])
 {
-    aslclient log_client = asl_open("com.lorenbland.BlackJack", "Logging for BlackJack", 0);
-    asl_log(log_client, NULL, ASL_LEVEL_INFO,"BlackJack was started");
 
+    BasicConfigurator::configure();
+    LoggerPtr logger(log4cxx::Logger::getLogger("com.foo"));
+    //LOG4CXX_INFO(<#logger#>, <#message#>)
+    //::log4cxx::helpers::MessageBuffer oss_;
+    //logger->forcedLog(::log4cxx::Level::getInfo(), oss_.str(oss_ << "LOGG"), LOG4CXX_LOCATION);
+
+    logger->log(::log4cxx::Level::INFO_INT, "TEST", LOG4CXX_LOCATION);
     BlackJackGame::BlackJackGame blackJackGame;
     
     blackJackGame.Start( );
-   
-    asl_log(log_client, NULL, ASL_LEVEL_INFO, "BlackJack is closing");
 
-    asl_close(log_client);
+    //LOG4CXX_INFO(logger, "Quitting Blackjack ");
 }
 

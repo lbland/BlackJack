@@ -1,0 +1,821 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00000000000000000000048d /* action.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000003ed /* action.cpp */; settings = {ATTRIBUTES = (); }; };
+		00000000000000000000048e /* appenderattachableimpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000003ee /* appenderattachableimpl.cpp */; settings = {ATTRIBUTES = (); }; };
+		00000000000000000000048f /* appenderskeleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000003ef /* appenderskeleton.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000490 /* aprinitializer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000003f0 /* aprinitializer.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000491 /* asyncappender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000003f1 /* asyncappender.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000492 /* basicconfigurator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000003f2 /* basicconfigurator.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000493 /* bufferedwriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000003f3 /* bufferedwriter.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000494 /* bytearrayinputstream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000003f4 /* bytearrayinputstream.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000495 /* bytearrayoutputstream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000003f5 /* bytearrayoutputstream.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000496 /* bytebuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000003f6 /* bytebuffer.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000497 /* cacheddateformat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000003f7 /* cacheddateformat.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000498 /* charsetdecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000003f8 /* charsetdecoder.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000499 /* charsetencoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000003f9 /* charsetencoder.cpp */; settings = {ATTRIBUTES = (); }; };
+		00000000000000000000049a /* class.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000003fa /* class.cpp */; settings = {ATTRIBUTES = (); }; };
+		00000000000000000000049b /* classnamepatternconverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000003fb /* classnamepatternconverter.cpp */; settings = {ATTRIBUTES = (); }; };
+		00000000000000000000049c /* classregistration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000003fc /* classregistration.cpp */; settings = {ATTRIBUTES = (); }; };
+		00000000000000000000049d /* condition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000003fd /* condition.cpp */; settings = {ATTRIBUTES = (); }; };
+		00000000000000000000049e /* configurator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000003fe /* configurator.cpp */; settings = {ATTRIBUTES = (); }; };
+		00000000000000000000049f /* consoleappender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000003ff /* consoleappender.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004a0 /* cyclicbuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000400 /* cyclicbuffer.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004a1 /* dailyrollingfileappender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000401 /* dailyrollingfileappender.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004a2 /* datagrampacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000402 /* datagrampacket.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004a3 /* datagramsocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000403 /* datagramsocket.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004a4 /* date.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000404 /* date.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004a5 /* dateformat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000405 /* dateformat.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004a6 /* datelayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000406 /* datelayout.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004a7 /* datepatternconverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000407 /* datepatternconverter.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004a8 /* defaultconfigurator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000408 /* defaultconfigurator.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004a9 /* defaultloggerfactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000409 /* defaultloggerfactory.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004aa /* defaultrepositoryselector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000040a /* defaultrepositoryselector.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004ab /* domconfigurator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000040b /* domconfigurator.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004ac /* exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000040c /* exception.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004ad /* fallbackerrorhandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000040d /* fallbackerrorhandler.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004ae /* file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000040e /* file.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004af /* fileappender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000040f /* fileappender.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004b0 /* filedatepatternconverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000410 /* filedatepatternconverter.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004b1 /* fileinputstream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000411 /* fileinputstream.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004b2 /* filelocationpatternconverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000412 /* filelocationpatternconverter.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004b3 /* fileoutputstream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000413 /* fileoutputstream.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004b4 /* filerenameaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000414 /* filerenameaction.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004b5 /* filewatchdog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000415 /* filewatchdog.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004b6 /* filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000416 /* filter.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004b7 /* filterbasedtriggeringpolicy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000417 /* filterbasedtriggeringpolicy.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004b8 /* fixedwindowrollingpolicy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000418 /* fixedwindowrollingpolicy.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004b9 /* formattinginfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000419 /* formattinginfo.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004ba /* fulllocationpatternconverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000041a /* fulllocationpatternconverter.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004bb /* gzcompressaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000041b /* gzcompressaction.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004bc /* hierarchy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000041c /* hierarchy.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004bd /* htmllayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000041d /* htmllayout.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004be /* inetaddress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000041e /* inetaddress.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004bf /* inputstream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000041f /* inputstream.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004c0 /* inputstreamreader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000420 /* inputstreamreader.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004c1 /* integer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000421 /* integer.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004c2 /* integerpatternconverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000422 /* integerpatternconverter.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004c3 /* layout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000423 /* layout.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004c4 /* level.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000424 /* level.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004c5 /* levelmatchfilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000425 /* levelmatchfilter.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004c6 /* levelpatternconverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000426 /* levelpatternconverter.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004c7 /* levelrangefilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000427 /* levelrangefilter.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004c8 /* linelocationpatternconverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000428 /* linelocationpatternconverter.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004c9 /* lineseparatorpatternconverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000429 /* lineseparatorpatternconverter.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004ca /* literalpatternconverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000042a /* literalpatternconverter.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004cb /* loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000042b /* loader.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004cc /* locale.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000042c /* locale.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004cd /* locationinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000042d /* locationinfo.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004ce /* logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000042e /* logger.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004cf /* loggerpatternconverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000042f /* loggerpatternconverter.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004d0 /* loggingevent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000430 /* loggingevent.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004d1 /* loggingeventpatternconverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000431 /* loggingeventpatternconverter.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004d2 /* loglog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000432 /* loglog.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004d3 /* logmanager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000433 /* logmanager.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004d4 /* logstream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000434 /* logstream.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004d5 /* manualtriggeringpolicy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000435 /* manualtriggeringpolicy.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004d6 /* mdc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000436 /* mdc.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004d7 /* messagebuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000437 /* messagebuffer.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004d8 /* messagepatternconverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000438 /* messagepatternconverter.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004d9 /* methodlocationpatternconverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000439 /* methodlocationpatternconverter.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004da /* mutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000043a /* mutex.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004db /* nameabbreviator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000043b /* nameabbreviator.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004dc /* namepatternconverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000043c /* namepatternconverter.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004dd /* ndc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000043d /* ndc.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004de /* ndcpatternconverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000043e /* ndcpatternconverter.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004df /* nteventlogappender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000043f /* nteventlogappender.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004e0 /* objectimpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000440 /* objectimpl.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004e1 /* objectoutputstream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000441 /* objectoutputstream.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004e2 /* objectptr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000442 /* objectptr.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004e3 /* obsoleterollingfileappender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000443 /* obsoleterollingfileappender.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004e4 /* odbcappender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000444 /* odbcappender.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004e5 /* onlyonceerrorhandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000445 /* onlyonceerrorhandler.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004e6 /* optionconverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000446 /* optionconverter.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004e7 /* outputdebugstringappender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000447 /* outputdebugstringappender.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004e8 /* outputstream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000448 /* outputstream.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004e9 /* outputstreamwriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000449 /* outputstreamwriter.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004ea /* patternconverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000044a /* patternconverter.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004eb /* patternlayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000044b /* patternlayout.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004ec /* patternparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000044c /* patternparser.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004ed /* pool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000044d /* pool.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004ee /* properties.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000044e /* properties.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004ef /* propertiespatternconverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000044f /* propertiespatternconverter.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004f0 /* propertyconfigurator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000450 /* propertyconfigurator.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004f1 /* propertyresourcebundle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000451 /* propertyresourcebundle.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004f2 /* propertysetter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000452 /* propertysetter.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004f3 /* reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000453 /* reader.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004f4 /* relativetimedateformat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000454 /* relativetimedateformat.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004f5 /* relativetimepatternconverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000455 /* relativetimepatternconverter.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004f6 /* resourcebundle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000456 /* resourcebundle.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004f7 /* rollingfileappender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000457 /* rollingfileappender.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004f8 /* rollingpolicy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000458 /* rollingpolicy.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004f9 /* rollingpolicybase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000459 /* rollingpolicybase.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004fa /* rolloverdescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000045a /* rolloverdescription.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004fb /* rootlogger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000045b /* rootlogger.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004fc /* serversocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000045c /* serversocket.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004fd /* simpledateformat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000045d /* simpledateformat.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004fe /* simplelayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000045e /* simplelayout.cpp */; settings = {ATTRIBUTES = (); }; };
+		0000000000000000000004ff /* sizebasedtriggeringpolicy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000045f /* sizebasedtriggeringpolicy.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000500 /* smtpappender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000460 /* smtpappender.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000501 /* socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000461 /* socket.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000502 /* socketappender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000462 /* socketappender.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000503 /* socketappenderskeleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000463 /* socketappenderskeleton.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000504 /* sockethubappender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000464 /* sockethubappender.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000505 /* socketoutputstream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000465 /* socketoutputstream.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000506 /* strftimedateformat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000466 /* strftimedateformat.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000507 /* stringhelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000467 /* stringhelper.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000508 /* stringmatchfilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000468 /* stringmatchfilter.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000509 /* stringtokenizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000469 /* stringtokenizer.cpp */; settings = {ATTRIBUTES = (); }; };
+		00000000000000000000050a /* synchronized.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000046a /* synchronized.cpp */; settings = {ATTRIBUTES = (); }; };
+		00000000000000000000050b /* syslogappender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000046b /* syslogappender.cpp */; settings = {ATTRIBUTES = (); }; };
+		00000000000000000000050c /* syslogwriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000046c /* syslogwriter.cpp */; settings = {ATTRIBUTES = (); }; };
+		00000000000000000000050d /* system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000046d /* system.cpp */; settings = {ATTRIBUTES = (); }; };
+		00000000000000000000050e /* systemerrwriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000046e /* systemerrwriter.cpp */; settings = {ATTRIBUTES = (); }; };
+		00000000000000000000050f /* systemoutwriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000046f /* systemoutwriter.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000510 /* telnetappender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000470 /* telnetappender.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000511 /* threadcxx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000471 /* threadcxx.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000512 /* threadlocal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000472 /* threadlocal.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000513 /* threadpatternconverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000473 /* threadpatternconverter.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000514 /* threadspecificdata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000474 /* threadspecificdata.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000515 /* throwableinformationpatternconverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000475 /* throwableinformationpatternconverter.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000516 /* timebasedrollingpolicy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000476 /* timebasedrollingpolicy.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000517 /* timezone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000477 /* timezone.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000518 /* transcoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000478 /* transcoder.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000519 /* transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000479 /* transform.cpp */; settings = {ATTRIBUTES = (); }; };
+		00000000000000000000051a /* triggeringpolicy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000047a /* triggeringpolicy.cpp */; settings = {ATTRIBUTES = (); }; };
+		00000000000000000000051b /* ttcclayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000047b /* ttcclayout.cpp */; settings = {ATTRIBUTES = (); }; };
+		00000000000000000000051c /* writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000047c /* writer.cpp */; settings = {ATTRIBUTES = (); }; };
+		00000000000000000000051d /* writerappender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000047d /* writerappender.cpp */; settings = {ATTRIBUTES = (); }; };
+		00000000000000000000051e /* xmllayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000047e /* xmllayout.cpp */; settings = {ATTRIBUTES = (); }; };
+		00000000000000000000051f /* xmlsocketappender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000047f /* xmlsocketappender.cpp */; settings = {ATTRIBUTES = (); }; };
+		000000000000000000000520 /* zipcompressaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000480 /* zipcompressaction.cpp */; settings = {ATTRIBUTES = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		000000000000000000000523 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0000000000000000000003ed /* action.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = action.cpp; path = ../src/main/cpp/action.cpp; sourceTree = SOURCE_ROOT; };
+		0000000000000000000003ee /* appenderattachableimpl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = appenderattachableimpl.cpp; path = ../src/main/cpp/appenderattachableimpl.cpp; sourceTree = SOURCE_ROOT; };
+		0000000000000000000003ef /* appenderskeleton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = appenderskeleton.cpp; path = ../src/main/cpp/appenderskeleton.cpp; sourceTree = SOURCE_ROOT; };
+		0000000000000000000003f0 /* aprinitializer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = aprinitializer.cpp; path = ../src/main/cpp/aprinitializer.cpp; sourceTree = SOURCE_ROOT; };
+		0000000000000000000003f1 /* asyncappender.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = asyncappender.cpp; path = ../src/main/cpp/asyncappender.cpp; sourceTree = SOURCE_ROOT; };
+		0000000000000000000003f2 /* basicconfigurator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = basicconfigurator.cpp; path = ../src/main/cpp/basicconfigurator.cpp; sourceTree = SOURCE_ROOT; };
+		0000000000000000000003f3 /* bufferedwriter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = bufferedwriter.cpp; path = ../src/main/cpp/bufferedwriter.cpp; sourceTree = SOURCE_ROOT; };
+		0000000000000000000003f4 /* bytearrayinputstream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = bytearrayinputstream.cpp; path = ../src/main/cpp/bytearrayinputstream.cpp; sourceTree = SOURCE_ROOT; };
+		0000000000000000000003f5 /* bytearrayoutputstream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = bytearrayoutputstream.cpp; path = ../src/main/cpp/bytearrayoutputstream.cpp; sourceTree = SOURCE_ROOT; };
+		0000000000000000000003f6 /* bytebuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = bytebuffer.cpp; path = ../src/main/cpp/bytebuffer.cpp; sourceTree = SOURCE_ROOT; };
+		0000000000000000000003f7 /* cacheddateformat.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = cacheddateformat.cpp; path = ../src/main/cpp/cacheddateformat.cpp; sourceTree = SOURCE_ROOT; };
+		0000000000000000000003f8 /* charsetdecoder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = charsetdecoder.cpp; path = ../src/main/cpp/charsetdecoder.cpp; sourceTree = SOURCE_ROOT; };
+		0000000000000000000003f9 /* charsetencoder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = charsetencoder.cpp; path = ../src/main/cpp/charsetencoder.cpp; sourceTree = SOURCE_ROOT; };
+		0000000000000000000003fa /* class.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = class.cpp; path = ../src/main/cpp/class.cpp; sourceTree = SOURCE_ROOT; };
+		0000000000000000000003fb /* classnamepatternconverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = classnamepatternconverter.cpp; path = ../src/main/cpp/classnamepatternconverter.cpp; sourceTree = SOURCE_ROOT; };
+		0000000000000000000003fc /* classregistration.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = classregistration.cpp; path = ../src/main/cpp/classregistration.cpp; sourceTree = SOURCE_ROOT; };
+		0000000000000000000003fd /* condition.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = condition.cpp; path = ../src/main/cpp/condition.cpp; sourceTree = SOURCE_ROOT; };
+		0000000000000000000003fe /* configurator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = configurator.cpp; path = ../src/main/cpp/configurator.cpp; sourceTree = SOURCE_ROOT; };
+		0000000000000000000003ff /* consoleappender.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = consoleappender.cpp; path = ../src/main/cpp/consoleappender.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000400 /* cyclicbuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = cyclicbuffer.cpp; path = ../src/main/cpp/cyclicbuffer.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000401 /* dailyrollingfileappender.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = dailyrollingfileappender.cpp; path = ../src/main/cpp/dailyrollingfileappender.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000402 /* datagrampacket.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = datagrampacket.cpp; path = ../src/main/cpp/datagrampacket.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000403 /* datagramsocket.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = datagramsocket.cpp; path = ../src/main/cpp/datagramsocket.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000404 /* date.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = date.cpp; path = ../src/main/cpp/date.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000405 /* dateformat.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = dateformat.cpp; path = ../src/main/cpp/dateformat.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000406 /* datelayout.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = datelayout.cpp; path = ../src/main/cpp/datelayout.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000407 /* datepatternconverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = datepatternconverter.cpp; path = ../src/main/cpp/datepatternconverter.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000408 /* defaultconfigurator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = defaultconfigurator.cpp; path = ../src/main/cpp/defaultconfigurator.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000409 /* defaultloggerfactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = defaultloggerfactory.cpp; path = ../src/main/cpp/defaultloggerfactory.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000040a /* defaultrepositoryselector.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = defaultrepositoryselector.cpp; path = ../src/main/cpp/defaultrepositoryselector.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000040b /* domconfigurator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = domconfigurator.cpp; path = ../src/main/cpp/domconfigurator.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000040c /* exception.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = exception.cpp; path = ../src/main/cpp/exception.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000040d /* fallbackerrorhandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = fallbackerrorhandler.cpp; path = ../src/main/cpp/fallbackerrorhandler.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000040e /* file.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = file.cpp; path = ../src/main/cpp/file.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000040f /* fileappender.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = fileappender.cpp; path = ../src/main/cpp/fileappender.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000410 /* filedatepatternconverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = filedatepatternconverter.cpp; path = ../src/main/cpp/filedatepatternconverter.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000411 /* fileinputstream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = fileinputstream.cpp; path = ../src/main/cpp/fileinputstream.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000412 /* filelocationpatternconverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = filelocationpatternconverter.cpp; path = ../src/main/cpp/filelocationpatternconverter.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000413 /* fileoutputstream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = fileoutputstream.cpp; path = ../src/main/cpp/fileoutputstream.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000414 /* filerenameaction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = filerenameaction.cpp; path = ../src/main/cpp/filerenameaction.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000415 /* filewatchdog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = filewatchdog.cpp; path = ../src/main/cpp/filewatchdog.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000416 /* filter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = filter.cpp; path = ../src/main/cpp/filter.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000417 /* filterbasedtriggeringpolicy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = filterbasedtriggeringpolicy.cpp; path = ../src/main/cpp/filterbasedtriggeringpolicy.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000418 /* fixedwindowrollingpolicy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = fixedwindowrollingpolicy.cpp; path = ../src/main/cpp/fixedwindowrollingpolicy.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000419 /* formattinginfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = formattinginfo.cpp; path = ../src/main/cpp/formattinginfo.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000041a /* fulllocationpatternconverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = fulllocationpatternconverter.cpp; path = ../src/main/cpp/fulllocationpatternconverter.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000041b /* gzcompressaction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = gzcompressaction.cpp; path = ../src/main/cpp/gzcompressaction.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000041c /* hierarchy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = hierarchy.cpp; path = ../src/main/cpp/hierarchy.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000041d /* htmllayout.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = htmllayout.cpp; path = ../src/main/cpp/htmllayout.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000041e /* inetaddress.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = inetaddress.cpp; path = ../src/main/cpp/inetaddress.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000041f /* inputstream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = inputstream.cpp; path = ../src/main/cpp/inputstream.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000420 /* inputstreamreader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = inputstreamreader.cpp; path = ../src/main/cpp/inputstreamreader.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000421 /* integer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = integer.cpp; path = ../src/main/cpp/integer.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000422 /* integerpatternconverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = integerpatternconverter.cpp; path = ../src/main/cpp/integerpatternconverter.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000423 /* layout.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = layout.cpp; path = ../src/main/cpp/layout.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000424 /* level.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = level.cpp; path = ../src/main/cpp/level.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000425 /* levelmatchfilter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = levelmatchfilter.cpp; path = ../src/main/cpp/levelmatchfilter.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000426 /* levelpatternconverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = levelpatternconverter.cpp; path = ../src/main/cpp/levelpatternconverter.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000427 /* levelrangefilter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = levelrangefilter.cpp; path = ../src/main/cpp/levelrangefilter.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000428 /* linelocationpatternconverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = linelocationpatternconverter.cpp; path = ../src/main/cpp/linelocationpatternconverter.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000429 /* lineseparatorpatternconverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = lineseparatorpatternconverter.cpp; path = ../src/main/cpp/lineseparatorpatternconverter.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000042a /* literalpatternconverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = literalpatternconverter.cpp; path = ../src/main/cpp/literalpatternconverter.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000042b /* loader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = loader.cpp; path = ../src/main/cpp/loader.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000042c /* locale.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = locale.cpp; path = ../src/main/cpp/locale.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000042d /* locationinfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = locationinfo.cpp; path = ../src/main/cpp/locationinfo.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000042e /* logger.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = logger.cpp; path = ../src/main/cpp/logger.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000042f /* loggerpatternconverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = loggerpatternconverter.cpp; path = ../src/main/cpp/loggerpatternconverter.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000430 /* loggingevent.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = loggingevent.cpp; path = ../src/main/cpp/loggingevent.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000431 /* loggingeventpatternconverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = loggingeventpatternconverter.cpp; path = ../src/main/cpp/loggingeventpatternconverter.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000432 /* loglog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = loglog.cpp; path = ../src/main/cpp/loglog.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000433 /* logmanager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = logmanager.cpp; path = ../src/main/cpp/logmanager.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000434 /* logstream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = logstream.cpp; path = ../src/main/cpp/logstream.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000435 /* manualtriggeringpolicy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = manualtriggeringpolicy.cpp; path = ../src/main/cpp/manualtriggeringpolicy.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000436 /* mdc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mdc.cpp; path = ../src/main/cpp/mdc.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000437 /* messagebuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = messagebuffer.cpp; path = ../src/main/cpp/messagebuffer.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000438 /* messagepatternconverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = messagepatternconverter.cpp; path = ../src/main/cpp/messagepatternconverter.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000439 /* methodlocationpatternconverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = methodlocationpatternconverter.cpp; path = ../src/main/cpp/methodlocationpatternconverter.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000043a /* mutex.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mutex.cpp; path = ../src/main/cpp/mutex.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000043b /* nameabbreviator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = nameabbreviator.cpp; path = ../src/main/cpp/nameabbreviator.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000043c /* namepatternconverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = namepatternconverter.cpp; path = ../src/main/cpp/namepatternconverter.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000043d /* ndc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ndc.cpp; path = ../src/main/cpp/ndc.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000043e /* ndcpatternconverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ndcpatternconverter.cpp; path = ../src/main/cpp/ndcpatternconverter.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000043f /* nteventlogappender.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = nteventlogappender.cpp; path = ../src/main/cpp/nteventlogappender.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000440 /* objectimpl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = objectimpl.cpp; path = ../src/main/cpp/objectimpl.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000441 /* objectoutputstream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = objectoutputstream.cpp; path = ../src/main/cpp/objectoutputstream.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000442 /* objectptr.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = objectptr.cpp; path = ../src/main/cpp/objectptr.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000443 /* obsoleterollingfileappender.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = obsoleterollingfileappender.cpp; path = ../src/main/cpp/obsoleterollingfileappender.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000444 /* odbcappender.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = odbcappender.cpp; path = ../src/main/cpp/odbcappender.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000445 /* onlyonceerrorhandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = onlyonceerrorhandler.cpp; path = ../src/main/cpp/onlyonceerrorhandler.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000446 /* optionconverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = optionconverter.cpp; path = ../src/main/cpp/optionconverter.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000447 /* outputdebugstringappender.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = outputdebugstringappender.cpp; path = ../src/main/cpp/outputdebugstringappender.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000448 /* outputstream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = outputstream.cpp; path = ../src/main/cpp/outputstream.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000449 /* outputstreamwriter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = outputstreamwriter.cpp; path = ../src/main/cpp/outputstreamwriter.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000044a /* patternconverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = patternconverter.cpp; path = ../src/main/cpp/patternconverter.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000044b /* patternlayout.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = patternlayout.cpp; path = ../src/main/cpp/patternlayout.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000044c /* patternparser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = patternparser.cpp; path = ../src/main/cpp/patternparser.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000044d /* pool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = pool.cpp; path = ../src/main/cpp/pool.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000044e /* properties.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = properties.cpp; path = ../src/main/cpp/properties.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000044f /* propertiespatternconverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = propertiespatternconverter.cpp; path = ../src/main/cpp/propertiespatternconverter.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000450 /* propertyconfigurator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = propertyconfigurator.cpp; path = ../src/main/cpp/propertyconfigurator.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000451 /* propertyresourcebundle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = propertyresourcebundle.cpp; path = ../src/main/cpp/propertyresourcebundle.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000452 /* propertysetter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = propertysetter.cpp; path = ../src/main/cpp/propertysetter.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000453 /* reader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = reader.cpp; path = ../src/main/cpp/reader.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000454 /* relativetimedateformat.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = relativetimedateformat.cpp; path = ../src/main/cpp/relativetimedateformat.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000455 /* relativetimepatternconverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = relativetimepatternconverter.cpp; path = ../src/main/cpp/relativetimepatternconverter.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000456 /* resourcebundle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = resourcebundle.cpp; path = ../src/main/cpp/resourcebundle.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000457 /* rollingfileappender.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = rollingfileappender.cpp; path = ../src/main/cpp/rollingfileappender.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000458 /* rollingpolicy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = rollingpolicy.cpp; path = ../src/main/cpp/rollingpolicy.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000459 /* rollingpolicybase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = rollingpolicybase.cpp; path = ../src/main/cpp/rollingpolicybase.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000045a /* rolloverdescription.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = rolloverdescription.cpp; path = ../src/main/cpp/rolloverdescription.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000045b /* rootlogger.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = rootlogger.cpp; path = ../src/main/cpp/rootlogger.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000045c /* serversocket.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = serversocket.cpp; path = ../src/main/cpp/serversocket.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000045d /* simpledateformat.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = simpledateformat.cpp; path = ../src/main/cpp/simpledateformat.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000045e /* simplelayout.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = simplelayout.cpp; path = ../src/main/cpp/simplelayout.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000045f /* sizebasedtriggeringpolicy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = sizebasedtriggeringpolicy.cpp; path = ../src/main/cpp/sizebasedtriggeringpolicy.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000460 /* smtpappender.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = smtpappender.cpp; path = ../src/main/cpp/smtpappender.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000461 /* socket.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = socket.cpp; path = ../src/main/cpp/socket.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000462 /* socketappender.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = socketappender.cpp; path = ../src/main/cpp/socketappender.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000463 /* socketappenderskeleton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = socketappenderskeleton.cpp; path = ../src/main/cpp/socketappenderskeleton.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000464 /* sockethubappender.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = sockethubappender.cpp; path = ../src/main/cpp/sockethubappender.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000465 /* socketoutputstream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = socketoutputstream.cpp; path = ../src/main/cpp/socketoutputstream.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000466 /* strftimedateformat.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = strftimedateformat.cpp; path = ../src/main/cpp/strftimedateformat.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000467 /* stringhelper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = stringhelper.cpp; path = ../src/main/cpp/stringhelper.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000468 /* stringmatchfilter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = stringmatchfilter.cpp; path = ../src/main/cpp/stringmatchfilter.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000469 /* stringtokenizer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = stringtokenizer.cpp; path = ../src/main/cpp/stringtokenizer.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000046a /* synchronized.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = synchronized.cpp; path = ../src/main/cpp/synchronized.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000046b /* syslogappender.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = syslogappender.cpp; path = ../src/main/cpp/syslogappender.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000046c /* syslogwriter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = syslogwriter.cpp; path = ../src/main/cpp/syslogwriter.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000046d /* system.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = system.cpp; path = ../src/main/cpp/system.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000046e /* systemerrwriter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = systemerrwriter.cpp; path = ../src/main/cpp/systemerrwriter.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000046f /* systemoutwriter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = systemoutwriter.cpp; path = ../src/main/cpp/systemoutwriter.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000470 /* telnetappender.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = telnetappender.cpp; path = ../src/main/cpp/telnetappender.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000471 /* threadcxx.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = threadcxx.cpp; path = ../src/main/cpp/threadcxx.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000472 /* threadlocal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = threadlocal.cpp; path = ../src/main/cpp/threadlocal.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000473 /* threadpatternconverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = threadpatternconverter.cpp; path = ../src/main/cpp/threadpatternconverter.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000474 /* threadspecificdata.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = threadspecificdata.cpp; path = ../src/main/cpp/threadspecificdata.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000475 /* throwableinformationpatternconverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = throwableinformationpatternconverter.cpp; path = ../src/main/cpp/throwableinformationpatternconverter.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000476 /* timebasedrollingpolicy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = timebasedrollingpolicy.cpp; path = ../src/main/cpp/timebasedrollingpolicy.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000477 /* timezone.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = timezone.cpp; path = ../src/main/cpp/timezone.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000478 /* transcoder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = transcoder.cpp; path = ../src/main/cpp/transcoder.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000479 /* transform.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = transform.cpp; path = ../src/main/cpp/transform.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000047a /* triggeringpolicy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = triggeringpolicy.cpp; path = ../src/main/cpp/triggeringpolicy.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000047b /* ttcclayout.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ttcclayout.cpp; path = ../src/main/cpp/ttcclayout.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000047c /* writer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = writer.cpp; path = ../src/main/cpp/writer.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000047d /* writerappender.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = writerappender.cpp; path = ../src/main/cpp/writerappender.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000047e /* xmllayout.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = xmllayout.cpp; path = ../src/main/cpp/xmllayout.cpp; sourceTree = SOURCE_ROOT; };
+		00000000000000000000047f /* xmlsocketappender.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = xmlsocketappender.cpp; path = ../src/main/cpp/xmlsocketappender.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000480 /* zipcompressaction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = zipcompressaction.cpp; path = ../src/main/cpp/zipcompressaction.cpp; sourceTree = SOURCE_ROOT; };
+		000000000000000000000482 /* log4cxx.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = log4cxx.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000000000000000000000522 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000481 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0000000000000000000003ed /* action.cpp */,
+				0000000000000000000003ee /* appenderattachableimpl.cpp */,
+				0000000000000000000003ef /* appenderskeleton.cpp */,
+				0000000000000000000003f0 /* aprinitializer.cpp */,
+				0000000000000000000003f1 /* asyncappender.cpp */,
+				0000000000000000000003f2 /* basicconfigurator.cpp */,
+				0000000000000000000003f3 /* bufferedwriter.cpp */,
+				0000000000000000000003f4 /* bytearrayinputstream.cpp */,
+				0000000000000000000003f5 /* bytearrayoutputstream.cpp */,
+				0000000000000000000003f6 /* bytebuffer.cpp */,
+				0000000000000000000003f7 /* cacheddateformat.cpp */,
+				0000000000000000000003f8 /* charsetdecoder.cpp */,
+				0000000000000000000003f9 /* charsetencoder.cpp */,
+				0000000000000000000003fa /* class.cpp */,
+				0000000000000000000003fb /* classnamepatternconverter.cpp */,
+				0000000000000000000003fc /* classregistration.cpp */,
+				0000000000000000000003fd /* condition.cpp */,
+				0000000000000000000003fe /* configurator.cpp */,
+				0000000000000000000003ff /* consoleappender.cpp */,
+				000000000000000000000400 /* cyclicbuffer.cpp */,
+				000000000000000000000401 /* dailyrollingfileappender.cpp */,
+				000000000000000000000402 /* datagrampacket.cpp */,
+				000000000000000000000403 /* datagramsocket.cpp */,
+				000000000000000000000404 /* date.cpp */,
+				000000000000000000000405 /* dateformat.cpp */,
+				000000000000000000000406 /* datelayout.cpp */,
+				000000000000000000000407 /* datepatternconverter.cpp */,
+				000000000000000000000408 /* defaultconfigurator.cpp */,
+				000000000000000000000409 /* defaultloggerfactory.cpp */,
+				00000000000000000000040a /* defaultrepositoryselector.cpp */,
+				00000000000000000000040b /* domconfigurator.cpp */,
+				00000000000000000000040c /* exception.cpp */,
+				00000000000000000000040d /* fallbackerrorhandler.cpp */,
+				00000000000000000000040e /* file.cpp */,
+				00000000000000000000040f /* fileappender.cpp */,
+				000000000000000000000410 /* filedatepatternconverter.cpp */,
+				000000000000000000000411 /* fileinputstream.cpp */,
+				000000000000000000000412 /* filelocationpatternconverter.cpp */,
+				000000000000000000000413 /* fileoutputstream.cpp */,
+				000000000000000000000414 /* filerenameaction.cpp */,
+				000000000000000000000415 /* filewatchdog.cpp */,
+				000000000000000000000416 /* filter.cpp */,
+				000000000000000000000417 /* filterbasedtriggeringpolicy.cpp */,
+				000000000000000000000418 /* fixedwindowrollingpolicy.cpp */,
+				000000000000000000000419 /* formattinginfo.cpp */,
+				00000000000000000000041a /* fulllocationpatternconverter.cpp */,
+				00000000000000000000041b /* gzcompressaction.cpp */,
+				00000000000000000000041c /* hierarchy.cpp */,
+				00000000000000000000041d /* htmllayout.cpp */,
+				00000000000000000000041e /* inetaddress.cpp */,
+				00000000000000000000041f /* inputstream.cpp */,
+				000000000000000000000420 /* inputstreamreader.cpp */,
+				000000000000000000000421 /* integer.cpp */,
+				000000000000000000000422 /* integerpatternconverter.cpp */,
+				000000000000000000000423 /* layout.cpp */,
+				000000000000000000000424 /* level.cpp */,
+				000000000000000000000425 /* levelmatchfilter.cpp */,
+				000000000000000000000426 /* levelpatternconverter.cpp */,
+				000000000000000000000427 /* levelrangefilter.cpp */,
+				000000000000000000000428 /* linelocationpatternconverter.cpp */,
+				000000000000000000000429 /* lineseparatorpatternconverter.cpp */,
+				00000000000000000000042a /* literalpatternconverter.cpp */,
+				00000000000000000000042b /* loader.cpp */,
+				00000000000000000000042c /* locale.cpp */,
+				00000000000000000000042d /* locationinfo.cpp */,
+				00000000000000000000042e /* logger.cpp */,
+				00000000000000000000042f /* loggerpatternconverter.cpp */,
+				000000000000000000000430 /* loggingevent.cpp */,
+				000000000000000000000431 /* loggingeventpatternconverter.cpp */,
+				000000000000000000000432 /* loglog.cpp */,
+				000000000000000000000433 /* logmanager.cpp */,
+				000000000000000000000434 /* logstream.cpp */,
+				000000000000000000000435 /* manualtriggeringpolicy.cpp */,
+				000000000000000000000436 /* mdc.cpp */,
+				000000000000000000000437 /* messagebuffer.cpp */,
+				000000000000000000000438 /* messagepatternconverter.cpp */,
+				000000000000000000000439 /* methodlocationpatternconverter.cpp */,
+				00000000000000000000043a /* mutex.cpp */,
+				00000000000000000000043b /* nameabbreviator.cpp */,
+				00000000000000000000043c /* namepatternconverter.cpp */,
+				00000000000000000000043d /* ndc.cpp */,
+				00000000000000000000043e /* ndcpatternconverter.cpp */,
+				00000000000000000000043f /* nteventlogappender.cpp */,
+				000000000000000000000440 /* objectimpl.cpp */,
+				000000000000000000000441 /* objectoutputstream.cpp */,
+				000000000000000000000442 /* objectptr.cpp */,
+				000000000000000000000443 /* obsoleterollingfileappender.cpp */,
+				000000000000000000000444 /* odbcappender.cpp */,
+				000000000000000000000445 /* onlyonceerrorhandler.cpp */,
+				000000000000000000000446 /* optionconverter.cpp */,
+				000000000000000000000447 /* outputdebugstringappender.cpp */,
+				000000000000000000000448 /* outputstream.cpp */,
+				000000000000000000000449 /* outputstreamwriter.cpp */,
+				00000000000000000000044a /* patternconverter.cpp */,
+				00000000000000000000044b /* patternlayout.cpp */,
+				00000000000000000000044c /* patternparser.cpp */,
+				00000000000000000000044d /* pool.cpp */,
+				00000000000000000000044e /* properties.cpp */,
+				00000000000000000000044f /* propertiespatternconverter.cpp */,
+				000000000000000000000450 /* propertyconfigurator.cpp */,
+				000000000000000000000451 /* propertyresourcebundle.cpp */,
+				000000000000000000000452 /* propertysetter.cpp */,
+				000000000000000000000453 /* reader.cpp */,
+				000000000000000000000454 /* relativetimedateformat.cpp */,
+				000000000000000000000455 /* relativetimepatternconverter.cpp */,
+				000000000000000000000456 /* resourcebundle.cpp */,
+				000000000000000000000457 /* rollingfileappender.cpp */,
+				000000000000000000000458 /* rollingpolicy.cpp */,
+				000000000000000000000459 /* rollingpolicybase.cpp */,
+				00000000000000000000045a /* rolloverdescription.cpp */,
+				00000000000000000000045b /* rootlogger.cpp */,
+				00000000000000000000045c /* serversocket.cpp */,
+				00000000000000000000045d /* simpledateformat.cpp */,
+				00000000000000000000045e /* simplelayout.cpp */,
+				00000000000000000000045f /* sizebasedtriggeringpolicy.cpp */,
+				000000000000000000000460 /* smtpappender.cpp */,
+				000000000000000000000461 /* socket.cpp */,
+				000000000000000000000462 /* socketappender.cpp */,
+				000000000000000000000463 /* socketappenderskeleton.cpp */,
+				000000000000000000000464 /* sockethubappender.cpp */,
+				000000000000000000000465 /* socketoutputstream.cpp */,
+				000000000000000000000466 /* strftimedateformat.cpp */,
+				000000000000000000000467 /* stringhelper.cpp */,
+				000000000000000000000468 /* stringmatchfilter.cpp */,
+				000000000000000000000469 /* stringtokenizer.cpp */,
+				00000000000000000000046a /* synchronized.cpp */,
+				00000000000000000000046b /* syslogappender.cpp */,
+				00000000000000000000046c /* syslogwriter.cpp */,
+				00000000000000000000046d /* system.cpp */,
+				00000000000000000000046e /* systemerrwriter.cpp */,
+				00000000000000000000046f /* systemoutwriter.cpp */,
+				000000000000000000000470 /* telnetappender.cpp */,
+				000000000000000000000471 /* threadcxx.cpp */,
+				000000000000000000000472 /* threadlocal.cpp */,
+				000000000000000000000473 /* threadpatternconverter.cpp */,
+				000000000000000000000474 /* threadspecificdata.cpp */,
+				000000000000000000000475 /* throwableinformationpatternconverter.cpp */,
+				000000000000000000000476 /* timebasedrollingpolicy.cpp */,
+				000000000000000000000477 /* timezone.cpp */,
+				000000000000000000000478 /* transcoder.cpp */,
+				000000000000000000000479 /* transform.cpp */,
+				00000000000000000000047a /* triggeringpolicy.cpp */,
+				00000000000000000000047b /* ttcclayout.cpp */,
+				00000000000000000000047c /* writer.cpp */,
+				00000000000000000000047d /* writerappender.cpp */,
+				00000000000000000000047e /* xmllayout.cpp */,
+				00000000000000000000047f /* xmlsocketappender.cpp */,
+				000000000000000000000480 /* zipcompressaction.cpp */,
+			);
+			name = Source;
+			sourceTree = "<source>";
+		};
+		000000000000000000000483 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000482 /* log4cxx.dylib */,
+			);
+			name = Products;
+			sourceTree = "<source>";
+		};
+		000000000000000000000484 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Documentation;
+			sourceTree = "<source>";
+		};
+		000000000000000000000485 /* log4cxx */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000481 /* Source */,
+				000000000000000000000484 /* Documentation */,
+				000000000000000000000483 /* Products */,
+			);
+			comments = "\n Licensed to the Apache Software Foundation (ASF) under one or more\n contributor license agreements.  See the NOTICE file distributed with\n this work for additional information regarding copyright ownership.\n The ASF licenses this file to You under the Apache License, Version 2.0\n (the \"License\"); you may not use this file except in compliance with\n the License.  You may obtain a copy of the License at\n\n      http://www.apache.org/licenses/LICENSE-2.0\n\n Unless required by applicable law or agreed to in writing, software\n distributed under the License is distributed on an \"AS IS\" BASIS,\n WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n See the License for the specific language governing permissions and\n limitations under the License.\n";
+			name = log4cxx;
+			sourceTree = "<source>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000000000000000000000524 /* log4cxx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00000000000000000000048c /* Build configuration list for PBXNativeTarget "log4cxx" */;
+			buildPhases = (
+				000000000000000000000521 /* Sources */,
+				000000000000000000000522 /* Frameworks */,
+				000000000000000000000523 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = log4cxx;
+			productInstallPath = "$(HOME)/bin";
+			productName = log4cxx;
+			productReference = 000000000000000000000482 /* log4cxx.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000489 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = 000000000000000000000488 /* Build configuration list for PBXProject "log4cxx" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 000000000000000000000485 /* log4cxx */;
+			projectDirPath = "";
+			projectRoot = ..;
+			targets = (
+				000000000000000000000524 /* log4cxx */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000000000000000000000521 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00000000000000000000048d /* action.cpp in Sources */,
+				00000000000000000000048e /* appenderattachableimpl.cpp in Sources */,
+				00000000000000000000048f /* appenderskeleton.cpp in Sources */,
+				000000000000000000000490 /* aprinitializer.cpp in Sources */,
+				000000000000000000000491 /* asyncappender.cpp in Sources */,
+				000000000000000000000492 /* basicconfigurator.cpp in Sources */,
+				000000000000000000000493 /* bufferedwriter.cpp in Sources */,
+				000000000000000000000494 /* bytearrayinputstream.cpp in Sources */,
+				000000000000000000000495 /* bytearrayoutputstream.cpp in Sources */,
+				000000000000000000000496 /* bytebuffer.cpp in Sources */,
+				000000000000000000000497 /* cacheddateformat.cpp in Sources */,
+				000000000000000000000498 /* charsetdecoder.cpp in Sources */,
+				000000000000000000000499 /* charsetencoder.cpp in Sources */,
+				00000000000000000000049a /* class.cpp in Sources */,
+				00000000000000000000049b /* classnamepatternconverter.cpp in Sources */,
+				00000000000000000000049c /* classregistration.cpp in Sources */,
+				00000000000000000000049d /* condition.cpp in Sources */,
+				00000000000000000000049e /* configurator.cpp in Sources */,
+				00000000000000000000049f /* consoleappender.cpp in Sources */,
+				0000000000000000000004a0 /* cyclicbuffer.cpp in Sources */,
+				0000000000000000000004a1 /* dailyrollingfileappender.cpp in Sources */,
+				0000000000000000000004a2 /* datagrampacket.cpp in Sources */,
+				0000000000000000000004a3 /* datagramsocket.cpp in Sources */,
+				0000000000000000000004a4 /* date.cpp in Sources */,
+				0000000000000000000004a5 /* dateformat.cpp in Sources */,
+				0000000000000000000004a6 /* datelayout.cpp in Sources */,
+				0000000000000000000004a7 /* datepatternconverter.cpp in Sources */,
+				0000000000000000000004a8 /* defaultconfigurator.cpp in Sources */,
+				0000000000000000000004a9 /* defaultloggerfactory.cpp in Sources */,
+				0000000000000000000004aa /* defaultrepositoryselector.cpp in Sources */,
+				0000000000000000000004ab /* domconfigurator.cpp in Sources */,
+				0000000000000000000004ac /* exception.cpp in Sources */,
+				0000000000000000000004ad /* fallbackerrorhandler.cpp in Sources */,
+				0000000000000000000004ae /* file.cpp in Sources */,
+				0000000000000000000004af /* fileappender.cpp in Sources */,
+				0000000000000000000004b0 /* filedatepatternconverter.cpp in Sources */,
+				0000000000000000000004b1 /* fileinputstream.cpp in Sources */,
+				0000000000000000000004b2 /* filelocationpatternconverter.cpp in Sources */,
+				0000000000000000000004b3 /* fileoutputstream.cpp in Sources */,
+				0000000000000000000004b4 /* filerenameaction.cpp in Sources */,
+				0000000000000000000004b5 /* filewatchdog.cpp in Sources */,
+				0000000000000000000004b6 /* filter.cpp in Sources */,
+				0000000000000000000004b7 /* filterbasedtriggeringpolicy.cpp in Sources */,
+				0000000000000000000004b8 /* fixedwindowrollingpolicy.cpp in Sources */,
+				0000000000000000000004b9 /* formattinginfo.cpp in Sources */,
+				0000000000000000000004ba /* fulllocationpatternconverter.cpp in Sources */,
+				0000000000000000000004bb /* gzcompressaction.cpp in Sources */,
+				0000000000000000000004bc /* hierarchy.cpp in Sources */,
+				0000000000000000000004bd /* htmllayout.cpp in Sources */,
+				0000000000000000000004be /* inetaddress.cpp in Sources */,
+				0000000000000000000004bf /* inputstream.cpp in Sources */,
+				0000000000000000000004c0 /* inputstreamreader.cpp in Sources */,
+				0000000000000000000004c1 /* integer.cpp in Sources */,
+				0000000000000000000004c2 /* integerpatternconverter.cpp in Sources */,
+				0000000000000000000004c3 /* layout.cpp in Sources */,
+				0000000000000000000004c4 /* level.cpp in Sources */,
+				0000000000000000000004c5 /* levelmatchfilter.cpp in Sources */,
+				0000000000000000000004c6 /* levelpatternconverter.cpp in Sources */,
+				0000000000000000000004c7 /* levelrangefilter.cpp in Sources */,
+				0000000000000000000004c8 /* linelocationpatternconverter.cpp in Sources */,
+				0000000000000000000004c9 /* lineseparatorpatternconverter.cpp in Sources */,
+				0000000000000000000004ca /* literalpatternconverter.cpp in Sources */,
+				0000000000000000000004cb /* loader.cpp in Sources */,
+				0000000000000000000004cc /* locale.cpp in Sources */,
+				0000000000000000000004cd /* locationinfo.cpp in Sources */,
+				0000000000000000000004ce /* logger.cpp in Sources */,
+				0000000000000000000004cf /* loggerpatternconverter.cpp in Sources */,
+				0000000000000000000004d0 /* loggingevent.cpp in Sources */,
+				0000000000000000000004d1 /* loggingeventpatternconverter.cpp in Sources */,
+				0000000000000000000004d2 /* loglog.cpp in Sources */,
+				0000000000000000000004d3 /* logmanager.cpp in Sources */,
+				0000000000000000000004d4 /* logstream.cpp in Sources */,
+				0000000000000000000004d5 /* manualtriggeringpolicy.cpp in Sources */,
+				0000000000000000000004d6 /* mdc.cpp in Sources */,
+				0000000000000000000004d7 /* messagebuffer.cpp in Sources */,
+				0000000000000000000004d8 /* messagepatternconverter.cpp in Sources */,
+				0000000000000000000004d9 /* methodlocationpatternconverter.cpp in Sources */,
+				0000000000000000000004da /* mutex.cpp in Sources */,
+				0000000000000000000004db /* nameabbreviator.cpp in Sources */,
+				0000000000000000000004dc /* namepatternconverter.cpp in Sources */,
+				0000000000000000000004dd /* ndc.cpp in Sources */,
+				0000000000000000000004de /* ndcpatternconverter.cpp in Sources */,
+				0000000000000000000004df /* nteventlogappender.cpp in Sources */,
+				0000000000000000000004e0 /* objectimpl.cpp in Sources */,
+				0000000000000000000004e1 /* objectoutputstream.cpp in Sources */,
+				0000000000000000000004e2 /* objectptr.cpp in Sources */,
+				0000000000000000000004e3 /* obsoleterollingfileappender.cpp in Sources */,
+				0000000000000000000004e4 /* odbcappender.cpp in Sources */,
+				0000000000000000000004e5 /* onlyonceerrorhandler.cpp in Sources */,
+				0000000000000000000004e6 /* optionconverter.cpp in Sources */,
+				0000000000000000000004e7 /* outputdebugstringappender.cpp in Sources */,
+				0000000000000000000004e8 /* outputstream.cpp in Sources */,
+				0000000000000000000004e9 /* outputstreamwriter.cpp in Sources */,
+				0000000000000000000004ea /* patternconverter.cpp in Sources */,
+				0000000000000000000004eb /* patternlayout.cpp in Sources */,
+				0000000000000000000004ec /* patternparser.cpp in Sources */,
+				0000000000000000000004ed /* pool.cpp in Sources */,
+				0000000000000000000004ee /* properties.cpp in Sources */,
+				0000000000000000000004ef /* propertiespatternconverter.cpp in Sources */,
+				0000000000000000000004f0 /* propertyconfigurator.cpp in Sources */,
+				0000000000000000000004f1 /* propertyresourcebundle.cpp in Sources */,
+				0000000000000000000004f2 /* propertysetter.cpp in Sources */,
+				0000000000000000000004f3 /* reader.cpp in Sources */,
+				0000000000000000000004f4 /* relativetimedateformat.cpp in Sources */,
+				0000000000000000000004f5 /* relativetimepatternconverter.cpp in Sources */,
+				0000000000000000000004f6 /* resourcebundle.cpp in Sources */,
+				0000000000000000000004f7 /* rollingfileappender.cpp in Sources */,
+				0000000000000000000004f8 /* rollingpolicy.cpp in Sources */,
+				0000000000000000000004f9 /* rollingpolicybase.cpp in Sources */,
+				0000000000000000000004fa /* rolloverdescription.cpp in Sources */,
+				0000000000000000000004fb /* rootlogger.cpp in Sources */,
+				0000000000000000000004fc /* serversocket.cpp in Sources */,
+				0000000000000000000004fd /* simpledateformat.cpp in Sources */,
+				0000000000000000000004fe /* simplelayout.cpp in Sources */,
+				0000000000000000000004ff /* sizebasedtriggeringpolicy.cpp in Sources */,
+				000000000000000000000500 /* smtpappender.cpp in Sources */,
+				000000000000000000000501 /* socket.cpp in Sources */,
+				000000000000000000000502 /* socketappender.cpp in Sources */,
+				000000000000000000000503 /* socketappenderskeleton.cpp in Sources */,
+				000000000000000000000504 /* sockethubappender.cpp in Sources */,
+				000000000000000000000505 /* socketoutputstream.cpp in Sources */,
+				000000000000000000000506 /* strftimedateformat.cpp in Sources */,
+				000000000000000000000507 /* stringhelper.cpp in Sources */,
+				000000000000000000000508 /* stringmatchfilter.cpp in Sources */,
+				000000000000000000000509 /* stringtokenizer.cpp in Sources */,
+				00000000000000000000050a /* synchronized.cpp in Sources */,
+				00000000000000000000050b /* syslogappender.cpp in Sources */,
+				00000000000000000000050c /* syslogwriter.cpp in Sources */,
+				00000000000000000000050d /* system.cpp in Sources */,
+				00000000000000000000050e /* systemerrwriter.cpp in Sources */,
+				00000000000000000000050f /* systemoutwriter.cpp in Sources */,
+				000000000000000000000510 /* telnetappender.cpp in Sources */,
+				000000000000000000000511 /* threadcxx.cpp in Sources */,
+				000000000000000000000512 /* threadlocal.cpp in Sources */,
+				000000000000000000000513 /* threadpatternconverter.cpp in Sources */,
+				000000000000000000000514 /* threadspecificdata.cpp in Sources */,
+				000000000000000000000515 /* throwableinformationpatternconverter.cpp in Sources */,
+				000000000000000000000516 /* timebasedrollingpolicy.cpp in Sources */,
+				000000000000000000000517 /* timezone.cpp in Sources */,
+				000000000000000000000518 /* transcoder.cpp in Sources */,
+				000000000000000000000519 /* transform.cpp in Sources */,
+				00000000000000000000051a /* triggeringpolicy.cpp in Sources */,
+				00000000000000000000051b /* ttcclayout.cpp in Sources */,
+				00000000000000000000051c /* writer.cpp in Sources */,
+				00000000000000000000051d /* writerappender.cpp in Sources */,
+				00000000000000000000051e /* xmllayout.cpp in Sources */,
+				00000000000000000000051f /* xmlsocketappender.cpp in Sources */,
+				000000000000000000000520 /* zipcompressaction.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		000000000000000000000486 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					LOG4CXX,
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../src/main/include,
+					"/usr/include/apr-1",
+					"${inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-laprutil-1",
+					"-lapr-1",
+					"-lpthread",
+					"-lstdc++",
+				);
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		000000000000000000000487 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					LOG4CXX,
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../src/main/include,
+					"/usr/include/apr-1",
+					"${inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"-laprutil-1",
+					"-lapr-1",
+					"-lpthread",
+					"-lstdc++",
+				);
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		00000000000000000000048a /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = "$(HOME)/bin";
+				PRODUCT_NAME = log4cxx;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		00000000000000000000048b /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "$(HOME)/bin";
+				PRODUCT_NAME = log4cxx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000000000000000000000488 /* Build configuration list for PBXProject "log4cxx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000486 /* Debug */,
+				000000000000000000000487 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		00000000000000000000048c /* Build configuration list for PBXNativeTarget "log4cxx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00000000000000000000048a /* Debug */,
+				00000000000000000000048b /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000000000000489 /* Project object */;
+}

@@ -77,8 +77,8 @@ namespace BlackJackGame
      ************************************/
     void Deck::Shuffle( )
     {
-        unsigned int seed = static_cast<unsigned int>(std::chrono::system_clock::now().time_since_epoch().count());
-        std::shuffle( m_cards.begin( ), m_cards.end( ), std::default_random_engine(seed) );
+        //unsigned int seed = static_cast<unsigned int>(std::chrono::system_clock::now().time_since_epoch().count());
+        std::random_shuffle( m_cards.begin( ), m_cards.end( ) );
         
         //reset how many cards have been delt.
         m_howManyCardsDelt = 0;
