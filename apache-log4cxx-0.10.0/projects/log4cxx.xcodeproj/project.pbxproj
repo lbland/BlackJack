@@ -740,7 +740,7 @@
 					"-lstdc++",
 				);
 				PREBINDING = NO;
-				SDKROOT = macosx;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
 			};
 			name = Debug;
 		};
@@ -766,7 +766,7 @@
 					"-lstdc++",
 				);
 				PREBINDING = NO;
-				SDKROOT = macosx;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
 			};
 			name = Release;
 		};
@@ -780,6 +780,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INSTALL_PATH = "$(HOME)/bin";
 				PRODUCT_NAME = log4cxx;
+				SDKROOT = macosx;
 				ZERO_LINK = YES;
 			};
 			name = Debug;
@@ -791,6 +792,7 @@
 				GCC_MODEL_TUNING = G5;
 				INSTALL_PATH = "$(HOME)/bin";
 				PRODUCT_NAME = log4cxx;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
