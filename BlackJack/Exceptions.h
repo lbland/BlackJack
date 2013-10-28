@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Loren Bland. All rights reserved.
 //
 
-#ifndef BlackJack_Exceptions_h
-#define BlackJack_Exceptions_h
+#ifndef __BlackJack_Exceptions_h
+#define __BlackJack_Exceptions_h
 
 #include <exception>
 

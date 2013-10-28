@@ -10,7 +10,7 @@
 #define BlackJack_Card_h
 
 #include <string>
-#include <asl.h>
+
 
 namespace BlackJackGame
 {
@@ -27,7 +27,7 @@ namespace BlackJackGame
         
     private:
         unsigned int m_value;
-        aslclient m_log;
+
         
         
     };

@@ -77,7 +77,6 @@ namespace BlackJackGame
         int         m_draws;
         GameState   m_state;
         int         m_numberOfHandsDelt;
-        aslclient   m_log;
         
     };
     

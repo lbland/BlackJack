@@ -8,6 +8,7 @@
 
 #include "Card.h"
 #include "Exceptions.h"
+#include "Logger.h"
 #include <sstream>
 
 namespace BlackJackGame
@@ -18,8 +19,7 @@ namespace BlackJackGame
      
      ****************************************/
     Card::Card( unsigned int value )
-     : m_value( value ),
-       m_log( asl_open("com.lorenbland.BlackJack", "Logging for BlackJack", 0) )
+     : m_value( value )
     {
     }
     
@@ -31,7 +31,7 @@ namespace BlackJackGame
      ****************************************/
     Card::~Card( )
     {
-        asl_close(m_log);
+
     }
     
     
@@ -88,7 +88,7 @@ namespace BlackJackGame
                     stream << "K";
                     break;
                 default:
-                    asl_log(m_log, NULL, ASL_LEVEL_ERR, "A Unknow Card number got is being used, critial error.  shutting down.");
+                    Logger::GetInstance()->LogMessage("A Unknow Card number got is being used, critial error.  shutting down.", ErrorLevel::ERROR);
                     throw UnKnownCard("An Unknown card has slipped into the deck");
                     break;
             }
@@ -109,7 +109,8 @@ namespace BlackJackGame
                     break;
                     
                 default:
-                    asl_log(m_log, NULL, ASL_LEVEL_ERR, "A Unknow Card suit got is being used, critial error.  shutting down.");
+                    Logger::GetInstance()->LogMessage("A Unknow Card suit got is being used, critial error.  shutting down.", ErrorLevel::ERROR);
+                    
                     throw UnKnownCard("An Unknown card has slipped into the deck");
                     break;
             }

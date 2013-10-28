@@ -7,32 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F16D3B1A181EEE050077BDE3 /* Logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F16D3B19181EEE050077BDE3 /* Logger.cpp */; };
 		F186A8A61815EBA30003AAFE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F186A8A51815EBA30003AAFE /* main.cpp */; };
 		F186A8A81815EBA30003AAFE /* BlackJack.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F186A8A71815EBA30003AAFE /* BlackJack.1 */; };
 		F186A8B21815F9520003AAFE /* Card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F186A8B11815F9520003AAFE /* Card.cpp */; };
 		F186A8B4181627010003AAFE /* Deck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F186A8B3181627010003AAFE /* Deck.cpp */; };
 		F186A8B71816F09D0003AAFE /* BlackJackGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F186A8B51816F09D0003AAFE /* BlackJackGame.cpp */; };
 		F186A8BA181727440003AAFE /* Dealer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F186A8B8181727440003AAFE /* Dealer.cpp */; };
-		F1A89CA8181E11DD00C6334B /* log4cxx.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A89CA5181E0E5E00C6334B /* log4cxx.dylib */; };
 		F1E8743418188CB8001F7BFF /* Hand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1E8743218188CB8001F7BFF /* Hand.cpp */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		F1A89CA4181E0E5E00C6334B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F1A89CA0181E0E5E00C6334B /* log4cxx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 000000000000000000000482;
-			remoteInfo = log4cxx;
-		};
-		F1A89CA6181E11DA00C6334B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F1A89CA0181E0E5E00C6334B /* log4cxx.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 000000000000000000000524;
-			remoteInfo = log4cxx;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		F186A8A01815EBA30003AAFE /* CopyFiles */ = {
@@ -48,6 +31,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F16D3B18181EED680077BDE3 /* Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		F16D3B19181EEE050077BDE3 /* Logger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Logger.cpp; sourceTree = "<group>"; };
 		F186A8A21815EBA30003AAFE /* BlackJack */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BlackJack; sourceTree = BUILT_PRODUCTS_DIR; };
 		F186A8A51815EBA30003AAFE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F186A8A71815EBA30003AAFE /* BlackJack.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = BlackJack.1; sourceTree = "<group>"; };
@@ -59,7 +44,6 @@
 		F186A8B51816F09D0003AAFE /* BlackJackGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlackJackGame.cpp; sourceTree = "<group>"; };
 		F186A8B8181727440003AAFE /* Dealer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dealer.cpp; sourceTree = "<group>"; };
 		F186A8B9181727440003AAFE /* Dealer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dealer.h; sourceTree = "<group>"; };
-		F1A89CA0181E0E5E00C6334B /* log4cxx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = log4cxx.xcodeproj; path = "apache-log4cxx-0.10.0/projects/log4cxx.xcodeproj"; sourceTree = "<group>"; };
 		F1E8743218188CB8001F7BFF /* Hand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hand.cpp; sourceTree = "<group>"; };
 		F1E8743318188CB8001F7BFF /* Hand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hand.h; sourceTree = "<group>"; };
 		F1E87435181D486A001F7BFF /* Exceptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Exceptions.h; sourceTree = "<group>"; };
@@ -70,7 +54,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1A89CA8181E11DD00C6334B /* log4cxx.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +63,6 @@
 		F186A8991815EBA30003AAFE = {
 			isa = PBXGroup;
 			children = (
-				F1A89CA0181E0E5E00C6334B /* log4cxx.xcodeproj */,
 				F186A8A41815EBA30003AAFE /* BlackJack */,
 				F186A8A31815EBA30003AAFE /* Products */,
 			);
@@ -110,16 +92,10 @@
 				F1E8743318188CB8001F7BFF /* Hand.h */,
 				F1E8743218188CB8001F7BFF /* Hand.cpp */,
 				F1E87435181D486A001F7BFF /* Exceptions.h */,
+				F16D3B18181EED680077BDE3 /* Logger.h */,
+				F16D3B19181EEE050077BDE3 /* Logger.cpp */,
 			);
 			path = BlackJack;
-			sourceTree = "<group>";
-		};
-		F1A89CA1181E0E5E00C6334B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F1A89CA5181E0E5E00C6334B /* log4cxx.dylib */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +112,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				F1A89CA7181E11DA00C6334B /* PBXTargetDependency */,
 			);
 			name = BlackJack;
 			productName = BlackJack;
@@ -162,12 +137,6 @@
 			mainGroup = F186A8991815EBA30003AAFE;
 			productRefGroup = F186A8A31815EBA30003AAFE /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = F1A89CA1181E0E5E00C6334B /* Products */;
-					ProjectRef = F1A89CA0181E0E5E00C6334B /* log4cxx.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				F186A8A11815EBA30003AAFE /* BlackJack */,
@@ -175,22 +144,13 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		F1A89CA5181E0E5E00C6334B /* log4cxx.dylib */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.dylib";
-			path = log4cxx.dylib;
-			remoteRef = F1A89CA4181E0E5E00C6334B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXSourcesBuildPhase section */
 		F186A89E1815EBA30003AAFE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F1E8743418188CB8001F7BFF /* Hand.cpp in Sources */,
+				F16D3B1A181EEE050077BDE3 /* Logger.cpp in Sources */,
 				F186A8B4181627010003AAFE /* Deck.cpp in Sources */,
 				F186A8B71816F09D0003AAFE /* BlackJackGame.cpp in Sources */,
 				F186A8BA181727440003AAFE /* Dealer.cpp in Sources */,
@@ -200,14 +160,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F1A89CA7181E11DA00C6334B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = log4cxx;
-			targetProxy = F1A89CA6181E11DA00C6334B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F186A8A91815EBA30003AAFE /* Debug */ = {
@@ -246,7 +198,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"apache-log4cxx-0.10.0/src/main/include",
 				);
-				LIBRARY_SEARCH_PATHS = "../apache-log4cxx-0.10.0/src";
+				LIBRARY_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -284,7 +236,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"apache-log4cxx-0.10.0/src/main/include",
 				);
-				LIBRARY_SEARCH_PATHS = "../apache-log4cxx-0.10.0/src";
+				LIBRARY_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx;
 			};

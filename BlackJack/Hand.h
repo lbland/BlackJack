@@ -44,7 +44,6 @@ namespace BlackJackGame
         bool                m_hasAce;
         unsigned int        m_highHand;
         unsigned int        m_lowHand;
-        aslclient           m_log;
         
     };
     

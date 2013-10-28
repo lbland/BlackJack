@@ -29,7 +29,6 @@ namespace BlackJackGame
     private:
         std::vector<CardPtr>    m_cards;
         unsigned int            m_howManyCardsDelt;
-        aslclient               m_log;
         
         
         
