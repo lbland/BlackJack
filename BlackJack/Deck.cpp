@@ -59,7 +59,7 @@ namespace BlackJackGame
         {
             if( m_howManyCardsDelt >= ( NUMBER_OF_CARDS_IN_A_DECK - 1 )  )
             {
-                BlackJackGame::Logger::GetInstance()->LogMessage("The deck is going to be empty Shutting down game.");
+                Logger::LogMessage("The deck is going to be empty Shutting down game.");
                 throw NoMoreCardsInDeck( "Sorry there are no more cards in the deck." );
             }
             return m_cards[ m_howManyCardsDelt++ ];

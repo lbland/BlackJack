@@ -127,7 +127,7 @@ namespace BlackJackGame
         
         if( m_hasAce == true )
         {
-            BlackJackGame::Logger::GetInstance()->LogMessage("Hand has two aces");
+            Logger::LogMessage("Hand has two aces");
             hand << "HAND: " << m_highHand << "(" << m_lowHand << ")";
         }
         else

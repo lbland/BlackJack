@@ -21,7 +21,9 @@ namespace BlackJackGame
      *******************************************/
     Logger::~Logger( )
     {
+        asl_log(m_log, NULL, ASL_LEVEL_ERR, "LOREN TEST DESTROY");
         asl_close(m_log);
+        delete GetInstance( );
     }
     
     
@@ -30,7 +32,7 @@ namespace BlackJackGame
      Destroy
       Ensure destroying the logger
      *******************************************/
-    void Logger::Destroy( )
+  /*  void Logger::Destroy( )
     {
         if(s_instance)
         {
@@ -38,7 +40,7 @@ namespace BlackJackGame
         }
         
     }
-
+*/
     
     /*******************************************
      
@@ -47,31 +49,31 @@ namespace BlackJackGame
      *******************************************/
     void Logger::LogMessage( const char* message, ErrorLevel level /*= INFO*/ )
     {
+        Logger *instance = GetInstance( );
 
         switch(level)
         {
             case ErrorLevel::INFO:
-                //asl_log(m_log, NULL, ASL_LEVEL_ERR, "A Unknow Card number got is being used, critial error.  shutting down.");
-                asl_log(m_log, NULL, ASL_LEVEL_INFO, "%s", message);
+                asl_log(instance->GetLog( ), NULL, ASL_LEVEL_INFO, "%s", message);
                 break;
                 
             case ErrorLevel::WARNING:
-                asl_log(m_log, NULL, ASL_LEVEL_WARNING, "%s", message);
+                asl_log(instance->GetLog( ), NULL, ASL_LEVEL_WARNING, "%s", message);
                 break;
                 
             case ErrorLevel::ERROR:
-                asl_log(m_log, NULL, ASL_LEVEL_ERR, "%s", message);
+                asl_log(instance->GetLog( ), NULL, ASL_LEVEL_ERR, "%s", message);
                 break;
                 
             case ErrorLevel::EMERGENCY:
-                asl_log(m_log, NULL, ASL_LEVEL_EMERG, "%s", message);
+                asl_log(instance->GetLog( ), NULL, ASL_LEVEL_EMERG, "%s", message);
                 break;
                 
             default:
                 
                 //unknown error levels should be debug
                 
-                asl_log(m_log, NULL, ASL_LEVEL_DEBUG, "%s", message);
+                asl_log(instance->GetLog( ), NULL, ASL_LEVEL_DEBUG, "%s", message);
                 break;
         }
         

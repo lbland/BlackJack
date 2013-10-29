@@ -33,15 +33,6 @@ namespace BlackJackGame
         Logger(Logger const& copy);
         Logger& operator=(Logger const& copy);
         
-        aslclient m_log;
-        static Logger *s_instance;
-        
-    public:
-        
-        ~Logger( );
-        
-        void Destroy( );
-
         static Logger* GetInstance()
         {
             if(s_instance == NULL)
@@ -52,7 +43,20 @@ namespace BlackJackGame
             return s_instance;
         }
         
-        void LogMessage( const char* message, ErrorLevel level = ErrorLevel::INFO );
+        aslclient GetLog()
+        {
+            return m_log;
+        }
+        
+        aslclient m_log;
+        static Logger *s_instance;
+        
+    public:
+        
+        ~Logger( );
+
+        
+        static void LogMessage( const char* message, ErrorLevel level = ErrorLevel::INFO );
         
     };
 

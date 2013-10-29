@@ -12,15 +12,14 @@
 
 int main(int argc, const char * argv[])
 {
-    BlackJackGame::Logger *logger = BlackJackGame::Logger::GetInstance();
-    logger->LogMessage("Starting BlackJack");
+
+    BlackJackGame::Logger::LogMessage("Starting BlackJack");
 
     BlackJackGame::BlackJackGame blackJackGame;
     
     blackJackGame.Start( );
 
-    logger->LogMessage("Quitting BlackJack");
-    logger->Destroy();
+    BlackJackGame::Logger::LogMessage("Quitting BlackJack");
     
 }
 

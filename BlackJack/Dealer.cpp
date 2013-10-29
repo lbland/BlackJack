@@ -139,7 +139,7 @@ namespace BlackJackGame
                         break;
                         
                     default:
-                        BlackJackGame::Logger::GetInstance()->LogMessage("The dealer did not have a state to go to. Shutting down game.");
+                        Logger::LogMessage("The dealer did not have a state to go to. Shutting down game.");
                         throw UnKnowGameState("The Dealer has lost track of what to do next.");
                         break;
                         
@@ -492,7 +492,7 @@ namespace BlackJackGame
     void Dealer::Draw( )
     {
         
-        BlackJackGame::Logger::GetInstance()->LogMessage("Game was a draw");
+        Logger::LogMessage("Game was a draw");
         
         assert( m_state == DRAW );
         
@@ -509,7 +509,7 @@ namespace BlackJackGame
      ****************************************/
     void Dealer::FinishHand( )
     {
-        BlackJackGame::Logger::GetInstance()->LogMessage("Finished a hand.");
+        Logger::LogMessage("Finished a hand.");
         assert( m_state == FINISH_HAND );
         
         std::cout   << "Player has won "
@@ -569,7 +569,7 @@ namespace BlackJackGame
             
             if( m_numberOfHandsDelt == HOW_MANY_GAMES_TO_PLAY_BEFORE_SHUFFLING )
             {
-                BlackJackGame::Logger::GetInstance()->LogMessage("Shuffling the deck");
+                Logger::LogMessage("Shuffling the deck");
                 
                 std::cout << "SHUFFLING DECK" << std::endl;
                 m_deckPtr->Shuffle( );

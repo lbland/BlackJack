@@ -88,7 +88,7 @@ namespace BlackJackGame
                     stream << "K";
                     break;
                 default:
-                    Logger::GetInstance()->LogMessage("A Unknow Card number got is being used, critial error.  shutting down.", ErrorLevel::ERROR);
+                    Logger::LogMessage("A Unknow Card number got is being used, critial error.  shutting down.", ErrorLevel::ERROR);
                     throw UnKnownCard("An Unknown card has slipped into the deck");
                     break;
             }
@@ -109,7 +109,7 @@ namespace BlackJackGame
                     break;
                     
                 default:
-                    Logger::GetInstance()->LogMessage("A Unknow Card suit got is being used, critial error.  shutting down.", ErrorLevel::ERROR);
+                    Logger::LogMessage("A Unknow Card suit got is being used, critial error.  shutting down.", ErrorLevel::ERROR);
                     
                     throw UnKnownCard("An Unknown card has slipped into the deck");
                     break;
