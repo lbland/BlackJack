@@ -7,6 +7,7 @@
 //
 
 #include "Hand.h"
+#include "Logger.h"
 
 #include <sstream>
 #include <assert.h>
@@ -32,7 +33,10 @@ namespace BlackJackGame
      ****************************************/
     Hand::~Hand( )
     {
-
+        for(std::list<CardPtr>::iterator iter = m_cards.begin( ); iter != m_cards.end( ); ++iter )
+        {
+            (*iter).reset( );
+        }
     }
     
     /****************************************
@@ -123,6 +127,7 @@ namespace BlackJackGame
         
         if( m_hasAce == true )
         {
+            BlackJackGame::Logger::GetInstance()->LogMessage("Hand has two aces");
             hand << "HAND: " << m_highHand << "(" << m_lowHand << ")";
         }
         else

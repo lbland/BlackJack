@@ -7,6 +7,7 @@
 //
 #include "Deck.h"
 #include "Exceptions.h"
+#include "Logger.h"
 
 #include <algorithm>
 #include <random>
@@ -40,6 +41,10 @@ namespace BlackJackGame
      ****************************************/
     Deck::~Deck( )
     {
+        for( int counter = 0; counter < NUMBER_OF_CARDS_IN_A_DECK; ++counter )
+        {
+            m_cards[ counter ].reset( );
+        }
     }
     
     /*************************************
@@ -54,7 +59,7 @@ namespace BlackJackGame
         {
             if( m_howManyCardsDelt >= ( NUMBER_OF_CARDS_IN_A_DECK - 1 )  )
             {
-                //asl_log(m_log, NULL, ASL_LEVEL_ERR, "The deck is going to be empty Shutting down game.");
+                BlackJackGame::Logger::GetInstance()->LogMessage("The deck is going to be empty Shutting down game.");
                 throw NoMoreCardsInDeck( "Sorry there are no more cards in the deck." );
             }
             return m_cards[ m_howManyCardsDelt++ ];

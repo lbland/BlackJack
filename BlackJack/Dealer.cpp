@@ -8,6 +8,7 @@
 
 #include "Dealer.h"
 #include "Exceptions.h"
+#include "Logger.h"
 
 #include <assert.h>
 
@@ -38,6 +39,9 @@ namespace BlackJackGame
      ****************************************/
     Dealer::~Dealer( )
     {
+        m_deckPtr.reset( );
+        m_dealersCards.reset( );
+        m_playersCards.reset( );
     }
     
     /*****************************************
@@ -135,7 +139,7 @@ namespace BlackJackGame
                         break;
                         
                     default:
-                        //asl_log(m_log, NULL, ASL_LEVEL_ERR, "The dealer did not have a state to go to. Shutting down game.");
+                        BlackJackGame::Logger::GetInstance()->LogMessage("The dealer did not have a state to go to. Shutting down game.");
                         throw UnKnowGameState("The Dealer has lost track of what to do next.");
                         break;
                         
@@ -487,7 +491,8 @@ namespace BlackJackGame
      ****************************************/
     void Dealer::Draw( )
     {
-       // asl_log(m_log, NULL, ASL_LEVEL_INFO, "Game was a draw");
+        
+        BlackJackGame::Logger::GetInstance()->LogMessage("Game was a draw");
         
         assert( m_state == DRAW );
         
@@ -504,7 +509,7 @@ namespace BlackJackGame
      ****************************************/
     void Dealer::FinishHand( )
     {
-        //asl_log(m_log, NULL, ASL_LEVEL_INFO, "Finished a had.");
+        BlackJackGame::Logger::GetInstance()->LogMessage("Finished a hand.");
         assert( m_state == FINISH_HAND );
         
         std::cout   << "Player has won "
@@ -564,7 +569,7 @@ namespace BlackJackGame
             
             if( m_numberOfHandsDelt == HOW_MANY_GAMES_TO_PLAY_BEFORE_SHUFFLING )
             {
-                //asl_log(m_log, NULL, ASL_LEVEL_INFO, "Shuffling the deck");
+                BlackJackGame::Logger::GetInstance()->LogMessage("Shuffling the deck");
                 
                 std::cout << "SHUFFLING DECK" << std::endl;
                 m_deckPtr->Shuffle( );

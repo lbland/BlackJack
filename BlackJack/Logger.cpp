@@ -14,11 +14,29 @@ BlackJackGame::Logger* BlackJackGame::Logger::s_instance = NULL;
 
 namespace BlackJackGame
 {
-    
+    /*******************************************
+     
+     Logger
+     destructor - need to close the log
+     *******************************************/
     Logger::~Logger( )
     {
-        asl_log(m_log, NULL, ASL_LEVEL_EMERG, "destroyed LOREN");
         asl_close(m_log);
+    }
+    
+    
+    /*******************************************
+     
+     Destroy
+      Ensure destroying the logger
+     *******************************************/
+    void Logger::Destroy( )
+    {
+        if(s_instance)
+        {
+            delete s_instance;
+        }
+        
     }
 
     

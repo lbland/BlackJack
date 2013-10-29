@@ -39,6 +39,8 @@ namespace BlackJackGame
     public:
         
         ~Logger( );
+        
+        void Destroy( );
 
         static Logger* GetInstance()
         {
