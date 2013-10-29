@@ -29,6 +29,7 @@ namespace BlackJackGame
       m_state( DEAL_CARDS ),
       m_numberOfHandsDelt( 0 )
     {
+        // all games should start with a fresh shuffle.
         m_deckPtr->Shuffle();
     }
     
@@ -36,9 +37,14 @@ namespace BlackJackGame
      
      Destructor - destructor.
      
+        Each players had should be cleared and returned to the deck.
+        The deck can then be free'd along with the hands
+     
      ****************************************/
     Dealer::~Dealer( )
     {
+        m_playersCards->ClearHand( );
+        m_dealersCards->ClearHand( );
         m_deckPtr.reset( );
         m_dealersCards.reset( );
         m_playersCards.reset( );
@@ -72,7 +78,8 @@ namespace BlackJackGame
     /*****************************************
      
      NextStep
-     
+        This is a state machine for the Black Jack game.
+        Since the dealer controls the game, it is the statemachine
      
      *****************************************/
     void Dealer::NextStep( )
@@ -249,10 +256,12 @@ namespace BlackJackGame
             
             if( input.compare("s") == 0 )
             {
+                // player stays, its the dealers turn
                 m_state = DEALERS_TURN;
             }
             else if( input.compare("h") == 0 )
             {
+                // hit.
                 GiveUserOneMoreCard( true );
                 m_state = CHECK_PLAYERS_HAND;
             }

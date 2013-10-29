@@ -17,6 +17,13 @@ namespace BlackJackGame
 {
     static const unsigned int NUMBER_OF_CARDS_IN_A_DECK = 52;
 
+    /*********************************************
+     Deck - 
+     
+            The Deck class is used for shuffling and dealing 
+            A single deck of cards.
+     
+     **********************************************/
     class Deck
     {
     public:

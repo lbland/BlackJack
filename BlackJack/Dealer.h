@@ -20,6 +20,15 @@ namespace BlackJackGame
     static const unsigned int  BLACK_JACK = 21;
     static const unsigned int HOW_MANY_GAMES_TO_PLAY_BEFORE_SHUFFLING = 6;
     
+    
+    /*********************************************
+     Dealer -
+     
+        The Dealer class is used to manage the state of a game.
+        It is responsible for getting user actions and determining the winner of
+        each hand.
+     
+     **********************************************/
     class Dealer
     {
         
@@ -28,8 +37,8 @@ namespace BlackJackGame
         Dealer( );
         
         ~Dealer( );
-        
         void Start( );
+        
     private:
         
         enum GameState

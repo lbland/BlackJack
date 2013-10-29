@@ -23,6 +23,14 @@ namespace BlackJackGame
         EMERGENCY
     };
     
+    
+    /*********************************************
+     Logger
+        This class is used for logging to the Apple System Logger
+        Any consumer must call CreateLog to initialize the Logger
+        and DestroyLog to close the log.
+     
+     **********************************************/
     class Logger
     {
     private:
@@ -43,7 +51,7 @@ namespace BlackJackGame
             return s_instance;
         }
         
-        aslclient GetLog()
+        aslclient& GetLog()
         {
             return m_log;
         }

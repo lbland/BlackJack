@@ -33,6 +33,7 @@ namespace BlackJackGame
      ****************************************/
     Hand::~Hand( )
     {
+        
         for(std::list<CardPtr>::iterator iter = m_cards.begin( ); iter != m_cards.end( ); ++iter )
         {
             (*iter).reset( );
@@ -73,6 +74,7 @@ namespace BlackJackGame
         else
         {
             // this is the case where we already have at least 2 aces.  We shoudl just add 1 in all cases
+            // because two 11s would be a bust.
             m_lowHand += LOW_ACE;
             m_highHand +=  LOW_ACE;
         }
@@ -125,6 +127,8 @@ namespace BlackJackGame
             hand << card->GetCardDisplay( ) << " ";
         }
         
+        // if the hand has an ace, there are two possible hands values.
+        // there can only be two values because multiple 11s would be a bust.
         if( m_hasAce == true )
         {
             Logger::LogMessage("Hand has two aces");

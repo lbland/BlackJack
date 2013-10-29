@@ -80,6 +80,8 @@ namespace BlackJackGame
      ************************************/
     void Deck::Shuffle( )
     {
+        Logger::LogMessage("Shuffling the deck");
+        
         unsigned int seed = static_cast<unsigned int>(std::chrono::system_clock::now().time_since_epoch().count());
         std::shuffle( m_cards.begin( ), m_cards.end( ), std::default_random_engine(seed) );
         

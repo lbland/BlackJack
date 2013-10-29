@@ -37,7 +37,9 @@ namespace BlackJackGame
     
     /*******************************************
      
-     GetCardDisplay return
+     GetCardDisplay - retuns the card in a human readible format
+        ie AC - Ace of clubs
+        6H - six of hearts.
      
      *******************************************/
     const std::string Card::GetCardDisplay( )

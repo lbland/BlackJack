@@ -23,6 +23,12 @@ namespace BlackJackGame
     static const unsigned int LOW_ACE       = 1;
     static const unsigned int SEVENTEEN     = 17;
     
+    /*********************************************
+      Hand - 
+        this class is used to keep track of a players hand.
+     
+     **********************************************/
+    
     class Hand
     {
     public:

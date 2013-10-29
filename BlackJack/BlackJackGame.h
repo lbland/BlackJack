@@ -13,6 +13,15 @@
 
 namespace BlackJackGame
 {
+    
+    /*******************************************
+     BlackJackGame
+     
+     The BlackJackGame class is responsible for starting the game
+     through the dealer.
+     
+     
+     ******************************************/
     class BlackJackGame
     {
     public:

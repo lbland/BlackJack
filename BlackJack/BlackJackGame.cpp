@@ -8,6 +8,7 @@
 
 #include "BlackJackGame.h"
 #include "Exceptions.h"
+#include "Logger.h"
 
 
 namespace BlackJackGame
@@ -35,14 +36,17 @@ namespace BlackJackGame
         }
         catch (NoMoreCardsInDeck& ex)
         {
+            Logger::LogMessage("NoMoreCardsInDeck Exception thrown and caught, too many cards were delt.", ErrorLevel::ERROR);
             std::cout << ex.what() << std::endl;
         }
         catch(UnKnownCard& ex)
         {
+            Logger::LogMessage("UnKnownCard Exception thrown and caught", ErrorLevel::ERROR);
             std::cout << ex.what() << std::endl;
         }
         catch(UnKnowGameState& ex)
         {
+            Logger::LogMessage("UnKnownGameState Exception thrown and caught, the dealer is in a unknown state.", ErrorLevel::ERROR);
             std::cout << ex.what() << std::endl;
         }
         

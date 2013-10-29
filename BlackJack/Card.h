@@ -15,6 +15,13 @@
 namespace BlackJackGame
 {
 
+    /*******************************************
+     Card
+     
+        The Card class is responsible for a single card.
+     
+     
+     ******************************************/
     class Card
     {
     public:

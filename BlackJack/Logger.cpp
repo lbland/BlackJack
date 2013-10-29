@@ -82,8 +82,7 @@ namespace BlackJackGame
                 
             default:
                 
-                //unknown error levels should be debug
-                
+                //unknown error levels should be debug level
                 asl_log(instance->GetLog( ), NULL, ASL_LEVEL_DEBUG, "%s", message);
                 break;
         }

@@ -13,6 +13,13 @@
 
 namespace BlackJackGame
 {
+    
+    /*****************************************
+     NoMoreCardsInDeck Exception
+        This exception is thrown when a deck has been completely delt,
+        and a request for the top card is made
+     
+     *****************************************/
     class NoMoreCardsInDeck : public std::exception
     {
     public:
@@ -29,6 +36,13 @@ namespace BlackJackGame
         const char* m_errorMessage;
     };
     
+    
+    /*****************************************
+     UnKnownCard Exception
+        This exception is throw when a card with an unknow value or suit 
+        is detected.
+     
+     *****************************************/
     class UnKnownCard : public std::exception
     {
     public:
@@ -45,6 +59,13 @@ namespace BlackJackGame
         const char* m_errorMessage;
     };
 
+    
+    
+    /*****************************************
+     UnKnowGameState Exception
+        This happen when the dealer class gets to a GameState that is unknown state
+     
+     *****************************************/
     class UnKnowGameState : public std::exception
     {
     public:
