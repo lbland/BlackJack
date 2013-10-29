@@ -12,6 +12,7 @@
 
 int main(int argc, const char * argv[])
 {
+    BlackJackGame::Logger::CreateLog();
 
     BlackJackGame::Logger::LogMessage("Starting BlackJack");
 
@@ -20,6 +21,8 @@ int main(int argc, const char * argv[])
     blackJackGame.Start( );
 
     BlackJackGame::Logger::LogMessage("Quitting BlackJack");
+    
+    BlackJackGame::Logger::DestroyLog();
     
 }
 

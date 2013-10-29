@@ -21,18 +21,29 @@ namespace BlackJackGame
      *******************************************/
     Logger::~Logger( )
     {
-        asl_log(m_log, NULL, ASL_LEVEL_ERR, "LOREN TEST DESTROY");
         asl_close(m_log);
-        delete GetInstance( );
     }
-    
+  
     
     /*******************************************
      
-     Destroy
+     CreateLog
+        Create the logger
+     *******************************************/
+    void Logger::CreateLog( )
+    {
+        if(s_instance == NULL)
+        {
+            s_instance = new Logger( );
+        }
+    }
+    
+    /*******************************************
+     
+     DestroyLog
       Ensure destroying the logger
      *******************************************/
-  /*  void Logger::Destroy( )
+    void Logger::DestroyLog( )
     {
         if(s_instance)
         {
@@ -40,7 +51,7 @@ namespace BlackJackGame
         }
         
     }
-*/
+
     
     /*******************************************
      

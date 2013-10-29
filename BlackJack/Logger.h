@@ -54,6 +54,10 @@ namespace BlackJackGame
     public:
         
         ~Logger( );
+        
+        static void CreateLog( );
+        
+        static void DestroyLog( );
 
         
         static void LogMessage( const char* message, ErrorLevel level = ErrorLevel::INFO );
